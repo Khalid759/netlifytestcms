@@ -1,0 +1,153 @@
+.home-students-bridge-gap {
+  padding: 4em 0;
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/Homepage/home-students-curve.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50em;
+  background-size: 100% 40em;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+  .home-students-title {
+    font-size: 1.8em;
+    color: #7e7e7e;
+    margin-bottom: 2em;
+    font-weight: normal;
+    span {
+      display: block;
+      font-weight: bold;
+    }
+  }
+
+  .home-students-container {
+    display: grid;
+    position: relative;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 6em;
+
+    .home-student-say {
+      position: relative;
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .home-student-content {
+        color: #243e60;
+        line-height: 25px;
+        animation: fadein 2s;
+
+        .home-student-deco-img {
+          width: 2.5em;
+        }
+        .home-student-name {
+          margin-top: 1em;
+          font-size: 1em;
+          font-weight: bold;
+        }
+
+        .home-student-company {
+          font-size: 0.9em;
+        }
+        .home-student-program {
+          font-size: 0.9em;
+        }
+
+        .home-student-description {
+          margin: 1.5em 0;
+          font-size: 0.9em;
+        }
+      }
+      .home-student-more-stories {
+        margin-top: 4em;
+        a {
+          font-weight: 400;
+          border-radius: 5px;
+          width: 260px;
+          height: 35px;
+          font-size: 1em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          background: #ffb800;
+        }
+      }
+    }
+
+    .home-student-image {
+      position: relative;
+
+      .home-student-bg {
+        position: absolute;
+        top: -10em;
+      }
+
+      .home-student-group {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column: 3/-1;
+        position: relative;
+
+        #student2 {
+          top: -8em;
+          left: 15em;
+        }
+
+        #student3 {
+          top: 15em;
+        }
+
+        #student4 {
+          right: 11em;
+          top: -2em;
+        }
+
+        #student5 {
+          right: 20em;
+        }
+
+        #student6 {
+          left: 15em;
+          top: 11em;
+        }
+
+        #student7 {
+          top: 23em;
+          left: 15em;
+        }
+
+        #student8 {
+          top: -2em;
+          right: 2em;
+        }
+
+        #student9 {
+          top: 13em;
+          right: 7em;
+        }
+
+        #student10 {
+          top: 25em;
+          right: 2em;
+        }
+
+        .imageBx {
+          position: absolute;
+          width: 15%;
+          transform: scale(1);
+          transition: transform 1s ease-in;
+        }
+
+        .active {
+          transform: scale(1.6);
+        }
+      }
+    }
+  }
+}

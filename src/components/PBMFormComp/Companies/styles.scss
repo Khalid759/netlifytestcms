@@ -1,0 +1,42 @@
+.pbm-form-newPartners-wrap {
+  text-align: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 95%;
+  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  @media screen and (min-width: 900px) {
+    padding-bottom: 7rem;
+    padding-top: 6rem;
+  }
+  .newPartners-foot {
+    font-size: 1.05em;
+    line-height: 21px;
+    margin-top: 50px;
+    font-weight: bold;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #ffb800;
+    margin-bottom: 1rem;
+    display: block;
+    @media screen and (min-width: 900px) {
+      font-size: 2em;
+      line-height: 37px;
+      margin-top: 36px;
+      width: 100%;
+    }
+  }
+  .compWrapNew {
+    width: 95%;
+    margin: 0 auto;
+    @media screen and (min-width: 900px) {
+      width: 85%;
+    }
+    img {
+      max-width: 996px;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}

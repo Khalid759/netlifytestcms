@@ -1,0 +1,103 @@
+.wwu-team {
+  margin-top: 107px;
+  position: relative;
+  padding-bottom: 100px;
+  display: block;
+  @media screen and (max-width: 900px) {
+    padding-bottom: 60px;
+  }
+  .wwu-team-wrapper {
+    max-width: 1144px;
+    margin: 0 auto;
+    position: relative;
+    width: 95%;
+    .bg-fluid {
+      position: absolute !important;
+      width: 445px;
+      height: auto;
+      vertical-align: top !important;
+      @media screen and (max-width: 900px) {
+        width: 180px;
+        top: 57px;
+      }
+    }
+    .bg-fluid2 {
+      right: 0;
+      top: 280px;
+      @media screen and (max-width: 900px) {
+        right: 0;
+        top: 200px;
+      }
+    }
+  }
+  .wwu-team-head {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .wwu-team-heading {
+      margin-bottom: 100px;
+      font-size: 2em;
+      line-height: 49px;
+      text-transform: uppercase;
+      color: #243e60;
+      font-weight: normal;
+      @media screen and (max-width: 900px) {
+        font-size: 1em;
+        margin-bottom: 40px;
+      }
+    }
+    .top-svg-div {
+      top: 38px;
+      left: 40%;
+      width: 299px;
+      position: absolute;
+      @media screen and (max-width: 900px) {
+        top: 33px;
+        left: 38%;
+        width: 156px;
+      }
+    }
+  }
+  .slick-slider {
+    margin-bottom: 30px;
+    display: block;
+    .slick-list {
+      overflow: hidden;
+      padding: 0px 50px;
+      display: block;
+      @media screen and (max-width: 900px) {
+        padding: 0;
+      }
+      .slick-track {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        .slick-slide {
+          margin: 0rem 1rem;
+          // width: 100%;
+          outline: none;
+          @media screen and (max-width: 900px) {
+            margin: 0;
+          }
+          div {
+            height: 100%;
+            margin: 0 auto;
+
+            @media screen and (max-width: 900px) {
+              text-align: center;
+            }
+          }
+          img {
+            max-height: 480px;
+            height: 420px;
+            width: auto;
+            @media screen and (max-width: 900px) {
+              height: 220px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

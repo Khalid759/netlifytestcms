@@ -1,0 +1,130 @@
+.about-us-founders-testimonials {
+  padding: 5em 0;
+  max-width: 1138px;
+  width: 90%;
+  margin: 0 auto;
+  .about-us-founders-head {
+    text-align: center;
+    margin-bottom: 85px;
+    .about-us-founders-head-heading {
+      width: fit-content;
+      color: #243e60;
+      text-transform: uppercase;
+      position: relative;
+      margin: 0 auto;
+      font-size: 1em;
+      @media screen and (min-width: 900px) {
+        font-size: 2em;
+      }
+      .about-us-founders-mb-block {
+        display: block;
+        @media screen and (min-width: 900px) {
+          display: inline;
+        }
+      }
+    }
+    .about-us-founders-head-heading::before {
+      height: 10px;
+      bottom: 2px;
+      left: 1rem;
+      width: 100%;
+      position: absolute;
+      content: "";
+      background: #ffb800;
+      z-index: -1;
+      @media screen and (min-width: 900px) {
+        width: 70%;
+        left: 12rem;
+        height: 21px;
+        bottom: 0;
+      }
+    }
+  }
+
+  .about-us-founders-testi-card {
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    grid-gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    @media screen and (min-width: 900px) {
+      margin-bottom: 0rem;
+      flex-direction: unset;
+    }
+    .about-us-founders-image-div {
+      width: 14em;
+      @media screen and (min-width: 900px) {
+        width: 12em;
+      }
+    }
+
+    .about-us-founders-about-div {
+      width: 100%;
+      @media screen and (min-width: 900px) {
+        width: 55%;
+      }
+
+      .about-us-founders-name {
+        font-weight: bold;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        line-height: 24px;
+        color: #404040;
+        text-align: center;
+        @media screen and (min-width: 900px) {
+          text-align: left;
+          font-size: 1em;
+        }
+      }
+
+      .about-us-founders-designation {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 0.9em;
+        line-height: 16px;
+        color: #ffb800;
+        text-align: center;
+        @media screen and (min-width: 900px) {
+          text-align: left;
+          font-size: 1em;
+        }
+      }
+
+      .about-us-founders-about {
+        margin-top: 1em;
+        font-size: 0.8em;
+        color: #404040;
+        text-align: justify;
+        line-height: 24px;
+        @media screen and (min-width: 900px) {
+          width: 42em;
+          font-size: 0.9em;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  .about-us-founders-reverse-card {
+    flex-direction: column;
+    @media screen and (min-width: 900px) {
+      flex-direction: row-reverse;
+    }
+    .founders-image-div {
+      margin-left: 1em;
+    }
+    .about-us-founders-about-div {
+      @media screen and (min-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      .about-us-founders-about {
+        @media screen and (min-width: 900px) {
+          text-align: end;
+        }
+      }
+    }
+  }
+}

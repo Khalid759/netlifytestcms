@@ -1,0 +1,64 @@
+.wp-optin {
+  .optin-container {
+    color: #7e7e7e;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 11px;
+    text-align: initial;
+  }
+
+  .optin-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .optin-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c4c4c42e;
+    background-color: #eee;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .optin-container input:checked ~ .optin-checkmark {
+    background-color: white;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .optin-checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .optin-container input:checked ~ .optin-checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .optin-container .optin-checkmark:after {
+    left: 6px;
+    top: 1px;
+    width: 3px;
+    height: 10px;
+    border: solid #f1ae13;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}

@@ -1,0 +1,79 @@
+.about-courses {
+  .container {
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+  }
+  .about-course-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 0;
+    border-top: 2px solid #c4c4c4;
+    @media screen and (max-width: 800px) {
+      margin-bottom: 1em;
+      border-top: initial;
+      padding: initial;
+    }
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .about-card {
+      width: 45%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 2em;
+      }
+    }
+  }
+  .section-head {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 35px;
+    color: #404040;
+    @media screen and (max-width: 800px) {
+      font-size: 0.9em;
+      line-height: initial;
+      margin-bottom: 0.5em;
+    }
+  }
+
+  .section-sub {
+    font-size: 90%;
+    @media screen and (max-width: 800px) {
+      font-size: 0.8em;
+      line-height: initial;
+    }
+  }
+
+  .section-points {
+    ul {
+      list-style: none;
+      padding: 1em;
+      @media screen and (max-width: 800px) {
+        padding: 0.5em;
+      }
+
+      li {
+        // font-size: 0.8em;
+        font-size: 90%;
+        padding: 0.5em 0;
+        @media screen and (max-width: 800px) {
+          padding: initial;
+          font-size: 0.8em;
+        }
+      }
+
+      li::before {
+        content: "\2022";
+        color: #f1ae13;
+        font-weight: bold;
+        font-size: 25px;
+        display: inline-block;
+        width: 15px;
+        margin-left: -0.6em;
+      }
+    }
+  }
+}

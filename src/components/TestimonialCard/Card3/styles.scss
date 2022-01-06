@@ -1,0 +1,102 @@
+.card-type3-section {
+  display: grid;
+  color: #243e60;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 1em;
+  background: #ffffff;
+  box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  padding: 2em 3em;
+  margin: 3em 0;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    grid-template-columns: 1fr 4fr;
+    padding: 1em;
+    column-gap: 0;
+  }
+
+  .type3-img-div {
+    grid-row: 1 / 4;
+
+    @media screen and (max-width: 800px) {
+      align-self: flex-start;
+      margin-right: 0.5em;
+    }
+    img {
+      width: 10em;
+      border-radius: 50%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .type3-info-div {
+    .type3-detail {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: 800px) {
+        justify-content: space-evenly;
+      }
+
+      .type3-about {
+        width: 70%;
+
+        .type3-name {
+          font-weight: bold;
+          margin-bottom: 0.2em;
+          @media screen and (max-width: 800px) {
+            font-size: 0.9em;
+          }
+        }
+
+        .type3-designation {
+          margin-bottom: 0.2em;
+          font-size: 0.9em;
+          @media screen and (max-width: 800px) {
+            font-size: 0.8em;
+          }
+        }
+
+        .type3-about-line {
+          margin-top: 1em;
+          border-bottom: #c4c4c4;
+          @media screen and (max-width: 800px) {
+            border: none;
+          }
+        }
+      }
+
+      .deco-img {
+        width: 3em;
+        @media screen and (max-width: 800px) {
+          width: 2em;
+        }
+      }
+    }
+  }
+
+  .card-divider {
+    display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+      grid-column: 1 / 4;
+    }
+  }
+
+  .type3-description {
+    margin-top: 1em;
+    font-style: italic;
+    width: 92%;
+    font-size: 0.85em;
+    line-height: 21px;
+    // grid-column: 2;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      font-size: 0.8em;
+      grid-column: 1 / 4;
+    }
+  }
+}

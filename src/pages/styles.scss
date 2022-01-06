@@ -1,0 +1,21 @@
+.main-homepage {
+  .header-container {
+    background: #f2f3f5;
+    z-index: 10;
+  }
+  .desktop-nav-wrap {
+    padding: 1.5em 0;
+  }
+
+  .desktop-nav {
+    .desktop-head-logo {
+      width: 6.5em;
+    }
+  }
+
+  .container {
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+  }
+}

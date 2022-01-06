@@ -1,0 +1,76 @@
+.kflive-watch-slide-container {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 30em;
+  height: 30em;
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/kraftshalaLiveSeries/live-bg-desk.webp);
+  margin-bottom: 100px;
+  margin-top: 90px;
+  .kflive-watch-live-wrap {
+    max-width: 1144px;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    .kflive-watch-live-headlines-heading {
+      font-size: 1em;
+      line-height: 21px;
+      text-align: center;
+      color: #243e60;
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 63px;
+      font-weight: normal;
+      @media screen and (min-width: 800px) {
+        font-size: 2em;
+        line-height: 49px;
+      }
+    }
+    .kflive-watch-sessions-carousel {
+      position: relative;
+      max-width: 90%;
+      margin: 0 auto;
+      .slick-slider {
+        margin-bottom: 30px;
+        .kflive-watch-prev {
+          position: absolute;
+          top: 40%;
+          z-index: 1;
+          cursor: pointer;
+          left: -30px;
+          width: 15px;
+          transform: rotate(180deg);
+          @media screen and (min-width: 800px) {
+            width: 24px;
+          }
+        }
+        .kflive-watch-next {
+          position: absolute;
+          top: 40%;
+          right: -25px;
+          z-index: 1;
+          cursor: pointer;
+          width: 15px;
+          @media screen and (min-width: 800px) {
+            width: 24px;
+          }
+        }
+        .slick-list {
+          overflow: hidden;
+          .slick-track {
+            display: flex;
+            img {
+              width: 100%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

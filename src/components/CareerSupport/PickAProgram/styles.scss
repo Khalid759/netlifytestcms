@@ -1,0 +1,76 @@
+.career-ice-pick-program {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+
+  .career-for-seo {
+    display: none;
+  }
+
+  .career-ice-pick-pro-title {
+    text-align: center;
+    color: #404040;
+    font-weight: 800;
+    font-size: 0.9em;
+    line-height: 153.4%;
+    @media screen and (min-width: 800px) {
+      font-size: 1.4em;
+    }
+  }
+
+  .career-ice-program-tab {
+    margin-top: 2em;
+    text-align: initial;
+
+    .career-program-tabs-container {
+      .career-program-tab-head {
+        @media screen and (min-width: 800px) {
+          padding: 0.5em;
+        }
+      }
+      .career-program-tab-content {
+        .career-program-tab-card {
+          @media screen and (min-width: 800px) {
+            width: 25em;
+          }
+        }
+      }
+    }
+
+    .career-program-tabs-container
+      .career-program-tab-head
+      .career-program-tab-head-name {
+      text-align: center;
+      font-weight: 500;
+      @media screen and (min-width: 800px) {
+        font-size: 1em;
+      }
+    }
+    .career-program-tabs-container
+      .career-program-tab-content
+      .career-program-tab-card
+      .career-program-card-img {
+      height: 11em !important;
+    }
+
+    img {
+      height: 11em !important;
+    }
+
+    .career-program-card-trademark {
+      display: none !important;
+    }
+
+    .career-program-card-about {
+      color: #040404 !important;
+      b {
+        font-weight: initial !important;
+      }
+    }
+
+    .career-program-note {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.contact-us-container {
+  .contact-us-wrap {
+    background-repeat: no-repeat;
+    background-size: 101% 22em;
+    background-position: center top;
+    width: 100%;
+    background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/contact/mob-bg.webp);
+    height: 31em;
+    background-color: #ffb800;
+    position: relative;
+    z-index: -1;
+    margin-top: -6rem;
+    @media screen and (min-width: 800px) {
+      background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/contact/desk-bg.webp);
+      height: 40em;
+      margin-top: -6rem;
+    }
+    .contact-us-hero-content {
+      position: absolute;
+      text-align: center;
+      top: 65%;
+      left: 50%;
+      max-width: 485px;
+      width: 90%;
+      transform: translate(-50%, -65%);
+      .contact-us-hero-content-heading {
+        font-weight: 800;
+        font-size: 1.5em;
+        line-height: 55px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 800px) {
+          font-size: 3em;
+        }
+      }
+      .contact-us-hero-content-desc {
+        font-weight: 700;
+        font-size: 0.9em;
+        line-height: 22px;
+        text-align: center;
+        color: #243e60;
+        @media screen and (min-width: 800px) {
+          font-size: 1.2em;
+          line-height: 31px;
+        }
+      }
+    }
+  }
+}

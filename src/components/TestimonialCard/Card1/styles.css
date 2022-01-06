@@ -1,0 +1,52 @@
+.card-type1-section {
+  box-shadow: 4px 4px 35px rgb(0 0 0 / 6%);
+  background: #fff;
+  border-radius: 5px;
+  padding: 1.5rem;
+  margin-bottom: 2em;
+}
+
+.card-head {
+  display: flex;
+}
+
+.card-content {
+  font-size: 12px;
+  line-height: 18px;
+  /* text-align: justify; */
+  align-items: center;
+  color: #404040;
+  margin-top: 1rem;
+}
+
+.img-div {
+  margin-right: 0.6em;
+}
+
+.info-div {
+  border-bottom: 1px solid black;
+}
+
+.info-div .name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.info-div .prev-comp {
+  font-size: 10px;
+  margin-bottom: 0.5em;
+}
+
+.info-div .curr-comp {
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #ffb800;
+  font-style: italic;
+}
+
+.info-div .college {
+  font-size: 10px;
+  margin-bottom: 0.5em;
+}

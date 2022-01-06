@@ -1,0 +1,162 @@
+.desktop-nav-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 85%;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}
+
+.desktop-nav {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+
+  .desktop-head-logo {
+    width: 8em;
+  }
+}
+.desktop-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 10;
+}
+.desktop-nav__menu {
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav__menu li:last-of-type {
+  margin-right: 0;
+}
+.desktop-nav__menu a {
+  display: block;
+  color: #606060;
+  text-decoration: none;
+  padding: 0.8em 1.8em;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.desktop-nav__menu li {
+  position: relative;
+}
+.desktop-nav__menu > li {
+  float: left;
+  margin-right: 1em;
+}
+
+.desktop-nav__menu li li a {
+  margin-top: 1px;
+}
+
+.desktop-nav__menu li a:first-child:nth-last-child(2):before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border: 5px solid transparent;
+  top: 57%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+/* submenu positioning*/
+.desktop-nav__menu ul {
+  position: absolute;
+  z-index: 1;
+  left: -99999em;
+  top: 32px;
+  opacity: 0;
+  width: 180px;
+  box-shadow: 1px 1px 30rgba (0, 0, 0, 0.06);
+  transition: opacity 0.2s ease-in;
+  margin: 0 auto;
+}
+.desktop-nav__menu ul li {
+  /* width: 180px; */
+  word-wrap: wrap;
+}
+.desktop-nav__menu ul ul {
+  border-left: 5px solid #fff;
+}
+
+.desktop-nav__menu ul li a {
+  font-size: 0.8em;
+  /* background: #f2efef; */
+  border-bottom: 1px solid #dcdadb;
+  padding: 7px 20px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out, height 0s, line-height 0s;
+}
+
+.desktop-nav__menu ul li:last-child > a {
+  border-bottom: none;
+}
+.desktop-nav__menu ul li a:hover {
+  color: #ffb800;
+  font-weight: 600;
+}
+
+.desktop-nav__menu > li:hover > ul {
+  left: auto;
+  opacity: 1;
+  margin-top: 5px;
+  min-width: 100%;
+  padding: 1em;
+  z-index: 5000;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.desktop-nav__menu > li li:hover > ul {
+  left: 100%;
+  opacity: 1;
+  margin-left: 0px;
+  top: -1px;
+  z-index: 5000;
+  background: #ffffff;
+  box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+/* arrow hover styling */
+.desktop-nav__menu > li > a:first-child:nth-last-child(2):before {
+  border-top-color: #606060;
+}
+
+.desktop-nav__menu li li > a:first-child:nth-last-child(2):before {
+  border-left-color: #606060;
+  margin-top: -2px;
+}
+
+.desktop-nav .login-btn a {
+  color: white;
+  font-weight: 500;
+  background: #ffb800;
+  border-radius: 100px;
+}
+.desktop-nav .btn-get-app a {
+  color: #fff;
+  padding: 8px 28px;
+  background: #ffb800;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.desktop-nav .icon-caret-up {
+  color: #f2efef;
+  margin: 0 auto;
+  display: block;
+  width: 180px;
+  text-align: center;
+}
+/* Desktop Navigation End */

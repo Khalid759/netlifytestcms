@@ -1,0 +1,31 @@
+.home-pick-program {
+  color: #7e7e7e;
+  text-align: center;
+  font-weight: 400;
+  padding: 2em 0;
+  padding-bottom: 5em;
+
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/Homepage/pick-a-program-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 60em;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    background-size: 100% 120em;
+    background-position: center top;
+  }
+
+  .pick-program-head {
+    font-size: 1.6em;
+    margin: 2em 0;
+    text-transform: uppercase;
+    @media screen and (max-width: 800px) {
+      font-size: 1.2em;
+      line-height: 30px;
+      text-transform: initial;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.wwu-kode-container {
+  .wwu-kode-content {
+    margin: 100px auto 0 auto;
+    @media screen and (max-width: 900px) {
+      margin-top: 65px;
+    }
+    .wwu-kode-header {
+      @media screen and (max-width: 900px) {
+        max-width: 95%;
+        margin: 0 auto;
+      }
+    }
+    .wwu-kode-header-heading {
+      font-size: 2em;
+      line-height: 49px;
+      color: #243e60;
+      left: 50%;
+      transform: translateX(-50%);
+      position: relative;
+      width: fit-content;
+      text-align: center;
+      margin-bottom: 20px;
+      font-weight: normal;
+      @media screen and (max-width: 900px) {
+        font-size: 1rem;
+        line-height: 25px;
+        .blockMB {
+          display: block;
+        }
+      }
+    }
+    .wwu-kode-header-heading::before {
+      position: absolute;
+      background: #ffb800;
+      left: 50%;
+      content: "";
+      width: 454px;
+      height: 21px;
+      bottom: 3px;
+      z-index: -1;
+      @media screen and (max-width: 900px) {
+        width: 188px;
+        height: 18px;
+        bottom: -4px;
+        left: 25%;
+      }
+    }
+
+    .wwu-kode-header-desc {
+      font-size: 1em;
+      line-height: 25px;
+      text-align: center;
+      color: #243e60;
+      max-width: 678px;
+      margin: 0 auto;
+      margin-bottom: 94px;
+      @media screen and (max-width: 900px) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 64px;
+      }
+    }
+  }
+  .wwu-kode-cards1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 33px;
+    grid-row-gap: 73px;
+    max-width: 1010px;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .wwu-kode-cards2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 33px;
+    grid-row-gap: 73px;
+    max-width: 1390px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 72px;
+  }
+
+  .wwu-kode-cards-card {
+    background: #ffffff;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem 1.8rem;
+    min-height: 400px;
+    height: 439px;
+    @media screen and (max-width: 900px) {
+      padding: 1rem;
+      height: 400px;
+    }
+    .wwu-kode-cards-card-heading {
+      font-size: 1.3em;
+      line-height: 31px;
+      text-align: center;
+      color: #ffb800;
+      font-weight: bold;
+      margin-bottom: 20px;
+      display: block;
+      @media screen and (max-width: 900px) {
+        font-size: 1em;
+        line-height: 25px;
+      }
+    }
+    .wwu-kode-cards-card-desc {
+      font-size: 0.9em;
+      line-height: 25px;
+      color: #243e60;
+      @media screen and (max-width: 900px) {
+        font-size: 0.75em;
+        line-height: 21px;
+      }
+    }
+    .wwu-kode-cards-card-img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      img {
+        height: 107px;
+        width: auto;
+      }
+    }
+  }
+  .text-yellow {
+    color: #ffb800;
+  }
+  .slick-list {
+    overflow: hidden;
+    padding: 0px 50px;
+    position: relative;
+    .slick-slide {
+      max-width: 228px;
+      margin: 2rem 1rem;
+      float: left;
+    }
+    .slick-slide > div {
+      height: 100%;
+    }
+  }
+  .slick-dots {
+    display: flex !important;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    @media screen and (max-width: 900px) {
+      width: 10em;
+    }
+
+    li::marker {
+      color: transparent;
+    }
+    button {
+      opacity: 0.25;
+      color: black;
+      background: black;
+      width: 1.2em;
+      height: 1.2em;
+      font-size: 0.5em;
+      display: inline-block;
+      border-radius: 11px;
+      border: none;
+    }
+
+    .slick-active button {
+      color: black;
+      opacity: 1;
+      background: black;
+    }
+  }
+}

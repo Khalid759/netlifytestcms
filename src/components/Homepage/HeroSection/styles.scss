@@ -1,0 +1,157 @@
+.hero-container {
+  font-family: "Montserrat";
+  background-image: url(https://res.cloudinary.com/judiscloud/image/upload/h_297,w_1024/v1580459784/Top-curve-web_emcorc.png);
+  background-size: 100% 20em;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  .container {
+    width: 90%;
+  }
+  @media screen and (max-width: 800px) {
+    background: none;
+  }
+
+  .hero-div {
+    display: flex;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .hero-image {
+    width: 50em;
+    position: relative;
+    @media screen and (max-width: 800px) {
+      width: 12em;
+      margin: 0 auto;
+    }
+
+    img {
+      position: absolute;
+      top: -3em;
+      z-index: 1;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+        position: relative;
+        top: initial;
+      }
+    }
+  }
+
+  .hero-text {
+    padding: 2em 0;
+    width: 82em;
+    @media screen and (max-width: 800px) {
+      padding-bottom: 1em;
+      width: 100%;
+    }
+  }
+
+  .title {
+    color: #7e7e7e;
+    font-weight: 800;
+    font-size: 1.8em;
+    line-height: 1.3em;
+    width: 85%;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    position: relative;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      font-size: 1.2em;
+      text-align: center;
+      text-transform: initial;
+    }
+
+    .title-deco {
+      position: absolute;
+      left: -0.5em;
+      top: 2em;
+      width: 14em;
+      @media screen and (max-width: 800px) {
+        width: 11em;
+        right: 2em;
+        left: initial;
+      }
+    }
+  }
+
+  .subtitle {
+    width: 85%;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #7e7e7e;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+      font-size: 0.8em;
+      text-align: center;
+    }
+  }
+
+  .partners-container-desktop {
+    width: 40em;
+    margin: 2em 0;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .partners-container-mob {
+    display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+      padding-right: 10px;
+    }
+  }
+
+  .home-btn {
+    background: #ffb800;
+    box-shadow: 2px 2px 7px rgb(0 0 0 / 11%);
+    border-radius: 100px;
+    border: 1px solid #ffb800;
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 1em 4em;
+    margin-top: 2em;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9em;
+
+    &:hover {
+      color: #ffb800;
+      border: 1px solid #ffb800;
+      background: #fff;
+    }
+  }
+
+  .home-btn-mob {
+    display: none;
+    @media screen and (max-width: 800px) {
+      display: block;
+      width: 15em;
+      margin: 1em auto;
+      text-align: center;
+      padding: 1em;
+    }
+  }
+
+  .home-btn-desktop {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .home-scrollto-section {
+    width: 5em;
+    margin: 1em auto;
+    cursor: pointer;
+    @media screen and (max-width: 800px) {
+      width: 3.5em;
+      margin: 2em auto;
+    }
+  }
+}

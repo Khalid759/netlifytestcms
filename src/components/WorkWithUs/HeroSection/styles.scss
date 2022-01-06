@@ -1,0 +1,97 @@
+.wwu-header-container {
+  margin-top: 60px;
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/Work_with_us/team-background.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 40rem;
+  position: relative;
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  @media (max-width: 1060px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 1025px) {
+    height: 30rem;
+    background-size: 100% 30rem;
+    &::before {
+      height: 60vh;
+      background-size: 100% 60vh;
+    }
+  }
+  @media (max-width: 700px) {
+    height: 17.5rem;
+    background-size: 100% 17.5rem;
+    &::before {
+      height: 40vh;
+      background-size: 100% 40vh;
+    }
+  }
+  @media (max-width: 500px) {
+    background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/Work_with_us/team-background-mb.webp);
+  }
+  .wwu-header-content {
+    max-width: 1138px;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+    color: #ffffff;
+    @media (min-width: 700px) {
+      margin-top: 10rem;
+    }
+    @media (min-width: 500px) and (max-width: 700px) {
+      margin-top: 5rem;
+    }
+    @media screen and (max-width: 500px) {
+      margin-top: 3rem;
+    }
+    .wwu-header-goto {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      cursor: pointer;
+      .wwu-header-desc2 {
+        color: #fff;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        width: 117%;
+        @media screen and (max-width: 800px) {
+          font-size: 0.75em;
+        }
+      }
+    }
+    .wwu-header-goto .gatsby-image-wrapper {
+      margin: 0 0 20px 0.5rem;
+      width: 7%;
+    }
+    .wwu-header-title {
+      font-weight: 800;
+      font-size: 2.2em;
+      line-height: 55px;
+      margin: 0 0 0.8rem 0 !important;
+      text-transform: uppercase;
+      color: #fff;
+      @media screen and (max-width: 800px) {
+        font-size: 1em;
+        line-height: 15px;
+      }
+    }
+    .wwu-header-desc {
+      font-size: 1em;
+      line-height: 33px;
+      color: #ffffff;
+      margin: 0 0 0.8rem 0 !important;
+      max-width: 452px;
+      @media screen and (max-width: 800px) {
+        padding: 0;
+        text-align: left;
+        font-size: 0.75em;
+        line-height: 14px;
+        max-width: 204px;
+      }
+    }
+  }
+}

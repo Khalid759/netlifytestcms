@@ -1,0 +1,118 @@
+.pbm-main-curriculum {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0em auto;
+  text-align: center;
+  padding: 2.5em;
+  color: #7e7e7e;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-top: 0em;
+    padding: 1em 0.5em;
+  }
+  @media (max-width: 900px) {
+    .learn-bestMB-border {
+      background: #e5e5e5;
+      height: 1px;
+      width: 212px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      margin-top: 4rem;
+    }
+  }
+
+  .pbm-curriculum-title {
+    margin-bottom: 51px;
+    font-size: 2.2em;
+    line-height: 55px;
+    text-align: center;
+    color: #404040;
+    font-weight: 800;
+    @media screen and (max-width: 900px) {
+      margin-bottom: 1.5em;
+      font-size: 1.4em;
+    }
+  }
+
+  .custom-accordion {
+    text-align: initial;
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .accordion-section {
+      margin: 1.5em auto;
+      color: #243e60;
+
+      .accordion-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.4s;
+        cursor: pointer;
+        padding: 1.5rem;
+        background: #f8f8f8;
+        border-radius: 2px;
+        @media screen and (max-width: 900px) {
+          padding: 1rem;
+        }
+
+        .accordion-title {
+          font-weight: bold;
+          width: 90%;
+          font-size: 1em;
+          line-height: 32px;
+          color: #606060;
+          @media screen and (max-width: 900px) {
+            font-size: 0.9em;
+            line-height: 24px;
+          }
+        }
+
+        .arrow-right {
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-left: 10px solid #7e7e7e;
+        }
+
+        .arrow-down {
+          width: 0;
+          height: 0;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 10px solid #7e7e7e;
+        }
+      }
+      .selected {
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 10%);
+      }
+
+      .accordion-content {
+        width: 95%;
+        color: #7e7e7e;
+        margin: 0 auto;
+        padding: 2em 1em;
+        font-size: 0.9em;
+        line-height: 25px;
+        animation: fadein 2s;
+        overflow: hidden;
+        ul {
+          margin-left: 5%;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 0.8em;
+          width: 100%;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

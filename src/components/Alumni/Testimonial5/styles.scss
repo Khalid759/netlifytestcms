@@ -1,0 +1,228 @@
+.alumni-testi5-wrap {
+  max-width: 1200px;
+  margin: 7rem auto;
+  width: 95%;
+  @media screen and (max-width: 800px) {
+    margin-top: 3rem;
+  }
+  .alumni-testi5-heroSlider-fixed {
+    .slick-slider {
+      height: 100%;
+      position: relative;
+      .slick-arrow {
+        position: absolute;
+        bottom: 0px;
+        width: 40px;
+        height: 40px;
+        background: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .slick-prev {
+        left: 35%;
+        box-shadow: 4px 4px 4px rgb(0 0 0 / 15%);
+        background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/kraftshalaLiveSeries/left-arrow.svg);
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+        background-position: center;
+        background-size: 40%;
+        @media screen and (min-width: 800px) {
+          left: 43%;
+        }
+      }
+      .slick-next {
+        right: 35%;
+        background-size: 40%;
+        box-shadow: -4px 4px 4px rgb(0 0 0 / 5%);
+        background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/kraftshalaLiveSeries/right-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (min-width: 800px) {
+          right: 43%;
+        }
+      }
+    }
+    .slick-list {
+      overflow: hidden;
+      .slick-track {
+        display: flex;
+        .slick-slide {
+          padding: 15px 18px 15px 18px;
+          margin: 2rem 1.8rem;
+          height: auto;
+          .alumni-testi5-wrap-card {
+            .alumni-testi5-slick-card {
+              background: #ffffff;
+              box-shadow: 4px 4px 25px rgb(0 0 0 / 15%);
+              border-radius: 10px;
+              padding: 15px 18px 15px 18px;
+              color: #243e60;
+              height: auto;
+              min-height: 300px;
+              top: -3rem;
+              left: 2rem;
+              position: relative;
+              @media screen and (max-width: 800px) {
+                min-height: 260px;
+              }
+              .alumni-testi5-slick-card-heading {
+                font-size: 0.75em;
+                line-height: 20px;
+                text-align: left;
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+                @media screen and (min-width: 800px) {
+                  font-size: 0.8em;
+                }
+              }
+              .alumni-testi5-slick-card-program {
+                font-size: 0.75em;
+                line-height: 20px;
+                text-align: left;
+                font-weight: bold;
+                color: #ffb800;
+                margin-bottom: 0.5rem;
+                @media screen and (min-width: 800px) {
+                  font-size: 0.8em;
+                }
+              }
+              .alumni-testi5-slick-card-desc {
+                font-size: 0.7em;
+                line-height: 22px;
+                padding-bottom: 1rem;
+                text-align: justify;
+                @media screen and (min-width: 800px) {
+                  font-size: 0.95em;
+                }
+                .experience-slide-story-desc {
+                  font-size: 0.8em;
+                  color: #7e7e7e;
+                  margin-top: 1em;
+                  line-height: 150%;
+                  @media screen and (max-width: 800px) {
+                    font-size: 0.9em;
+                  }
+                  .read-more {
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 22px;
+                    color: #243e60;
+                    bottom: 1rem;
+                    right: 1.5rem;
+                    float: right;
+                    margin-top: 15px;
+                    display: block;
+                    outline: none;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .alumni-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.37);
+    z-index: 50;
+    transition: 0.7s;
+  }
+  .alumni-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 430px;
+    width: 100%;
+    z-index: 100;
+    transition: 0.5s ease-out;
+    background: #ffffff;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    max-height: 85%;
+    overflow-y: auto;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 800px) {
+      width: 90%;
+      max-height: 490px;
+    }
+    .alumni-modal-content {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      .alumni-modal-content-txt {
+        .alumni-modal-card-header {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 1rem;
+          .alumni-modal-card-img-person {
+            max-width: 200px;
+            margin-right: 0.5rem;
+            @media screen and (max-width: 800px) {
+              min-width: 60px;
+            }
+          }
+          .alumni-modal-card-info {
+            width: 80%;
+            align-self: center;
+            line-height: 20px;
+            font-size: 0.8em;
+            text-align: center;
+            .alumni-modal-card-title {
+              color: #243e60;
+            }
+            .alumni-modal-card-program {
+              color: #ffb800;
+              font-weight: bold;
+              margin-top: 0.5rem;
+              font-size: 1.1em;
+            }
+          }
+          @media screen and (max-width: 800px) {
+            font-size: 0.9em;
+          }
+        }
+        .alumni-modal-card-info-quote {
+          width: 32px;
+        }
+      }
+      .alumni-modal-card-head-divide {
+        height: 1px;
+        margin: 13px 0 13px 0;
+        background: #c4c4c4;
+        @media screen and (max-width: 800px) {
+          width: 100%;
+        }
+      }
+      .alumni-modal-card-content {
+        text-align: left;
+        font-size: 0.8em;
+        line-height: 22px;
+        color: #243e60;
+        padding-bottom: 2rem;
+        position: relative;
+        height: 100%;
+        @media screen and (max-width: 800px) {
+          font-size: 0.75em;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+}

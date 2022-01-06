@@ -1,0 +1,88 @@
+.sl-fee-container {
+  display: flex;
+  padding: 2rem 7.5rem;
+  max-width: 1144px;
+  background: #243e60;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin: 4rem auto;
+  justify-content: space-between;
+  width: 95%;
+  @media screen and (max-width: 900px) {
+    padding: 1rem 2.5rem;
+    margin: 2rem auto;
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 2rem;
+  }
+  .sl-fee-info {
+    @media screen and (max-width: 800px) {
+      width: 55%;
+    }
+    .sl-fee-title {
+      font-weight: bold;
+      font-size: 2em;
+      color: #ffffff;
+      @media screen and (max-width: 900px) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 1em;
+      }
+    }
+    .sl-fee-amount {
+      font-weight: bold;
+      font-size: 1.5em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #ffb800;
+      @media screen and (max-width: 900px) {
+        font-size: 1.2em;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 0.9em;
+      }
+    }
+    .sl-fee-emi {
+      font-size: 1em;
+      color: #ffb800;
+      @media screen and (max-width: 900px) {
+        font-size: 0.8em;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 0.7em;
+      }
+    }
+  }
+  .sl-apply-now-div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    @media screen and (max-width: 900px) {
+      width: 40%;
+    }
+    .sl-apply-now {
+      font-weight: bold;
+      font-size: 1em;
+      line-height: 17px;
+      text-align: center;
+      color: #ffffff !important;
+      display: inline-block;
+      width: 32vw;
+      background: #ffb800;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      cursor: pointer;
+      text-transform: uppercase;
+      @media screen and (max-width: 500px) {
+        font-size: 0.8em;
+        padding-top: 5px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}

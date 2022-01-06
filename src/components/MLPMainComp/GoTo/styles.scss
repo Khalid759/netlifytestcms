@@ -1,0 +1,17 @@
+.ml-goTo-section {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 3em;
+  @media screen and (max-width: 900px) {
+    margin-top: 0em;
+  }
+
+
+  img {
+    width: 5em !important;
+    @media screen and (max-width: 900px) {
+      width: 3em !important;
+    }
+  }
+}

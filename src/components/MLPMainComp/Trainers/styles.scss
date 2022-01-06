@@ -1,0 +1,153 @@
+.mlp-main-trainers {
+  padding: 2em 0;
+  color: #7e7e7e;
+
+  .slick-arrowCustom {
+    width: 5em;
+  }
+
+  .trainers-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (max-width: 900px) {
+      padding-top: 1rem;
+    }
+  }
+
+  .will-be-training {
+    background: #f5f5f5;
+    padding: 2em 0;
+    padding-top: 5em;
+    @media screen and (max-width: 900px) {
+      padding: 0.1em 0;
+      padding-top: 0em;
+      margin-top: 0em;
+    }
+
+    margin: 2em auto;
+    .training-section-title {
+      font-size: 1.7em;
+      font-weight: bold;
+      @media screen and (max-width: 900px) {
+        font-size: 1.4em;
+      }
+    }
+
+    .trainers-slider {
+      margin: 4em auto;
+      max-width: 55em;
+      overflow: hidden;
+      @media screen and (max-width: 900px) {
+        margin-top: 0em;
+      }
+
+      .trainers-note {
+        font-style: italic;
+        color: #243e60;
+      }
+
+      .slick-slider {
+        position: relative;
+        .slick-arrow {
+          position: absolute;
+          bottom: 0;
+          width: 44px;
+          height: 44px;
+          background: #fff;
+          border-radius: 50%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          border: none;
+          //   color: transparent;
+          margin-bottom: 1em;
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          z-index: 1;
+        }
+
+        .slick-prev {
+          left: 43%;
+          box-shadow: 4px 4px 4px rgb(0 0 0 / 15%);
+          background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/mlp_images/Polygon-6.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          @media screen and (max-width: 900px) {
+            left: 40%;
+          }
+          @media screen and (max-width: 520px) {
+            left: 30%;
+          }
+        }
+
+        .slick-next {
+          right: 43%;
+          box-shadow: -4px 4px 4px rgb(0 0 0 / 5%);
+          background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/mlp_images/Polygon-5.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          @media screen and (max-width: 900px) {
+            right: 40%;
+          }
+          @media screen and (max-width: 520px) {
+            right: 30%;
+          }
+        }
+      }
+
+      .trainer-card {
+        width: 15em !important;
+        margin-bottom: 5em;
+      }
+      .slick-track {
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 900px) {
+          text-align: center;
+        }
+
+        .slick-slide > div {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .alumni-working {
+    margin-top: 2em;
+    border-bottom: 1px solid #c4c4c4;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    @media screen and (max-width: 900px) {
+      padding-top: 0em;
+    }
+    .alumni-section-title {
+      font-size: 1.7em;
+      font-weight: bold;
+      @media screen and (max-width: 900px) {
+        font-size: 1.4em;
+      }
+    }
+
+    .alumni-section-img {
+      max-width: 50em;
+      margin: 3em auto;
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+    .alumni-section-img-mb {
+      display: none;
+      margin-top: 3rem;
+      @media screen and (max-width: 900px) {
+        display: block;
+      }
+    }
+  }
+}

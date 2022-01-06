@@ -1,0 +1,198 @@
+.mlp-main-curriculum {
+  padding-bottom: 3rem;
+  color: #7e7e7e;
+  @media screen and (max-width: 900px) {
+    padding-bottom: 2em;
+  }
+
+  .curriculum-container {
+    margin: 0 auto;
+    padding: 3rem 0rem;
+    text-align: center;
+    @media screen and (max-width: 900px) {
+      padding: 3rem 1rem;
+    }
+  }
+
+  .curriculum-head {
+    font-size: 1.7em;
+    font-weight: bold;
+    @media screen and (max-width: 900px) {
+      font-size: 1.4em;
+    }
+  }
+
+  .curriculum-description {
+    margin: 2em auto;
+    max-width: 49em;
+    line-height: 25px;
+    font-size: 1em;
+    @media screen and (max-width: 900px) {
+      font-size: 0.8em;
+      line-height: 17px;
+    }
+
+    span {
+      display: block;
+    }
+
+    .yellow-desc {
+      color: #f1ae13;
+      font-weight: 500;
+    }
+  }
+
+  .curriculum-weeks {
+    max-width: 55rem;
+    margin: 0 auto;
+    .weeks-head {
+      color: #000000;
+      font-weight: 600;
+      padding: 0.5em 2em;
+      display: flex;
+      justify-content: center;
+      max-width: 25em;
+      margin: 1em auto;
+      @media screen and (max-width: 900px) {
+        font-size: 0.8em;
+      }
+    }
+    .cur-tab-head {
+      display: flex;
+      justify-content: space-around;
+      padding: 1em;
+      gap: 3rem;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 900px) {
+        gap: 1.5rem;
+        margin-bottom: 0rem;
+      }
+
+      .cur-tab-head-name {
+        width: 50%;
+        font-weight: 800;
+        cursor: pointer;
+        padding: 0.8em 3em;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border: 1px solid #ffb800;
+        color: #7e7e7e;
+        @media screen and (max-width: 800px) {
+          padding: 0.8em;
+          font-size: 0.7em;
+        }
+      }
+
+      .active-tab {
+        color: white;
+        background-color: #ffb800;
+
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.16);
+      }
+    }
+    .weeks-img {
+      max-width: 50em;
+      margin: 2em auto;
+    }
+    .mlp-curriculum-table,
+    tr,
+    td,
+    th {
+      border: 1px solid #e5e5e5;
+      border-collapse: collapse;
+      text-align: left;
+      padding: 0.7rem 1rem;
+      font-size: 0.95em;
+      background: white;
+      @media screen and (max-width: 900px) {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9em;
+      }
+    }
+    .mlp-curriculum-table {
+      .bg-yellow {
+        background-color: #f1ae13;
+        color: white;
+        border: 1px solid #f1ae13;
+        text-align: center;
+        font-size: 1.3em;
+        @media screen and (max-width: 900px) {
+          font-size: 1.1em;
+        }
+      }
+      .text-yellow {
+        background-color: white;
+        color: #f1ae13;
+      }
+      .br-bt-none {
+        border-bottom: 0px solid white;
+      }
+      .bg-light-yellow {
+        background: rgba(241, 174, 19, 0.2);
+      }
+      .text-center {
+        text-align: center;
+      }
+      .v-align-top {
+        vertical-align: top;
+      }
+      h3,
+      h4 {
+        font-size: 1.1em;
+        display: inline;
+        @media screen and (max-width: 900px) {
+          font-size: 1em;
+        }
+      }
+      .text-h3 {
+        font-size: 1.3em;
+        @media screen and (max-width: 900px) {
+          font-size: 1.1em;
+        }
+      }
+      .text-h4 {
+        font-size: 1.1em;
+        display: inline;
+        font-weight: bold;
+        @media screen and (max-width: 900px) {
+          font-size: 1em;
+        }
+      }
+      b {
+        font-size: 0.95em;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .wk-sec {
+    font-size: 0.7em !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .week-number {
+    font-size: 1em !important;
+  }
+}
+
+.week-head {
+  @media screen and (max-width: 900px) {
+    font-size: 0.85em;
+  }
+}
+
+.week-title {
+  @media screen and (max-width: 900px) {
+    font-size: 0.8em;
+  }
+}
+
+h3 {
+  display: inline;
+  font-size: 1em;
+}

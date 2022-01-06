@@ -1,0 +1,151 @@
+.choose-track-container {
+  margin-bottom: 5em;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 1em;
+  }
+
+  .container {
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+  .choose-track-bg {
+    height: 318px;
+    left: 0px;
+    background: rgba(196, 196, 196, 0.29);
+    @media screen and (max-width: 800px) {
+      background: transparent;
+      height: initial;
+    }
+  }
+  .choose-track-head {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 1em 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffb800;
+  }
+
+  .choose-track-cards {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .track-card {
+      width: 47%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+
+      .track-card-title {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 1em;
+        line-height: 20px;
+        color: #000000;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+
+      .track-card-box {
+        background: #404040;
+        padding-bottom: 1.5em;
+        box-shadow: 0px 0px 47px rgb(36 62 96 / 12%);
+        border-radius: 8px;
+        text-align: center;
+        color: #fff;
+        @media screen and (max-width: 800px) {
+          border-radius: initial;
+        }
+
+        .track-card-deco {
+          text-align: end;
+          img {
+            width: 2em;
+            margin-right: 1em;
+          }
+        }
+
+        .track-card-title-mob {
+          display: none;
+          @media screen and (max-width: 800px) {
+            display: block;
+            font-size: 0.8em;
+            font-weight: 400;
+          }
+
+          .bottom-line {
+            @media screen and (max-width: 800px) {
+              display: block;
+              width: 15%;
+              margin: 0.5em auto;
+              height: 0.5px;
+              background: #ffb800;
+            }
+          }
+        }
+
+        .track-card-head {
+          font-weight: 800;
+          padding-top: 1em;
+          font-size: 1.3em;
+          line-height: 30px;
+          color: #ffb800;
+          @media screen and (max-width: 800px) {
+            padding-top: 0.5em;
+          }
+        }
+
+        .track-card-subhead {
+          font-weight: 800;
+          font-size: 1.2em;
+          min-height: 1.5em;
+          @media screen and (max-width: 800px) {
+            min-height: initial;
+            font-size: 1em;
+          }
+        }
+
+        .seperator {
+          border: 0.5px solid #989797;
+          width: 80%;
+          margin: 0 auto;
+          display: inline-block;
+          @media screen and (max-width: 800px) {
+            width: 55%;
+          }
+        }
+
+        .track-card-about {
+          font-weight: bold;
+          width: 67%;
+          margin: 0.5em auto;
+          font-size: 0.9em;
+          line-height: 25px;
+          @media screen and (max-width: 800px) {
+            width: 85%;
+            font-size: 80%;
+          }
+        }
+
+        .track-card-btn {
+          a {
+            display: inline-block;
+            background: #ffb800;
+            margin: 1.5em 0;
+            box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+            padding: 0.5em 1.5em;
+            border-radius: 100px;
+            font-weight: bold;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}

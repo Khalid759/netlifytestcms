@@ -1,0 +1,58 @@
+.kflive-infos-wrap {
+  margin: 0px 0 100px 0;
+  padding: 2rem 0;
+  background: #ffb800;
+  @media screen and (min-width: 800px) {
+    padding: 4rem 0;
+    margin: 0px 0 110px 0;
+  }
+  .kflive-wrap {
+    max-width: 1144px;
+    margin: 0 auto;
+    width: 90%;
+    .kflive-infos {
+      grid-template-columns: 1fr;
+      display: grid;
+      justify-items: center;
+      @media screen and (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .kflive-info {
+        text-align: center;
+        .kflive-info-img {
+          margin-bottom: 0.7rem;
+          max-width: 56px;
+          @media screen and (min-width: 800px) {
+            margin-bottom: 1.5rem;
+            max-width: fit-content;
+          }
+        }
+        .kflive-info-figure {
+          font-size: 30px;
+          line-height: 46px;
+          font-weight: 800;
+          color: #ffffff;
+          @media screen and (min-width: 800px) {
+            font-size: 36px;
+            line-height: 55px;
+          }
+        }
+        .kflive-info-desc {
+          font-size: 24px;
+          line-height: 37px;
+          color: #ffffff;
+          @media screen and (min-width: 800px) {
+            font-size: 30px;
+            line-height: 46px;
+          }
+        }
+        .kflive-info-borderMB {
+          width: 131px;
+          height: 2px;
+          background: #fff;
+          margin: 1.5rem auto 35px auto;
+        }
+      }
+    }
+  }
+}

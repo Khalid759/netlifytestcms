@@ -1,0 +1,79 @@
+.corporate-training-feedback {
+  padding: 5em 0;
+  .inner-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    @media screen and (max-width: 800px) {
+      width: 90%;
+    }
+  }
+
+  .feedback-title {
+    text-align: center;
+    font-weight: initial;
+    font-size: 2em;
+    line-height: 49px;
+    color: #7e7e7e;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    @media screen and (max-width: 800px) {
+      font-size: 1em;
+      line-height: 24px;
+    }
+  }
+
+  .feedback-section {
+    .feedback-layout {
+      //   margin-bottom: 5em;
+      background-image: url(https://res.cloudinary.com/judiscloud/image/upload/v1582288438/Vector_22_1_nweu6a.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 40em;
+      position: relative;
+      height: 40em;
+      width: 100%;
+      @media screen and (max-width: 800px) {
+        background-image: url(https://res.cloudinary.com/judiscloud/image/upload/v1582546119/Vector_33Pick_a_program_that_suit_you-background_curve_mobile_hevzys.png);
+        height: 50em;
+        background-size: 100% 43em;
+      }
+    }
+    .sub-feedbacks {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2em;
+      @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 3rem;
+        margin-top: 2rem;
+        overflow-x: auto;
+        padding: 1rem 0 1rem 1rem;
+      }
+      .sub-card {
+        box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+        background: #fff;
+        padding: 2em 1em;
+        border-radius: 10px;
+        color: #243e60;
+        @media screen and (max-width: 800px) {
+          min-width: 197px;
+        }
+        .sub-description {
+          font-size: 0.9em;
+          line-height: 24px;
+          font-style: italic;
+          margin-bottom: 1em;
+        }
+
+        .sub-name {
+          font-size: 0.9em;
+
+          margin-bottom: 1em;
+          text-align: right;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

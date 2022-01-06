@@ -1,0 +1,108 @@
+.corporate-training-hero-form {
+  background: #fff;
+  border-top: 25px solid #ffb800;
+  border-radius: 5px;
+  //   max-width: 527px;
+  width: 100%;
+  box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
+
+  padding: 2em 1em;
+  @media screen and (max-width: 800px) {
+    border-top: 18px solid #ffb800;
+    padding-bottom: 0rem;
+  }
+
+  .form-head {
+    text-align: center;
+    line-height: 28px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #243e60;
+    margin-bottom: 1em;
+    @media screen and (max-width: 800px) {
+      font-size: 0.9em;
+    }
+  }
+
+  .form-content {
+    padding: 1em 2em;
+    @media screen and (max-width: 800px) {
+      padding: 0.5em 0em;
+    }
+  }
+
+  .form-label {
+    display: block;
+    color: #747474;
+    font-size: 0.8em;
+  }
+
+  .form-input {
+    margin-top: 1em;
+    input {
+      font-size: 0.8em;
+      border: none;
+      outline: none;
+      border: 1px solid#e5e5e5;
+
+      background: #ffffff;
+      box-shadow: inset -4px -4px 15px rgb(0 0 0 / 6%);
+      border-radius: 100px !important;
+      text-indent: 1em;
+      margin-top: 1em;
+      width: 100%;
+      padding: 0.5em;
+      @media screen and (max-width: 800px) {
+        padding: 0.4em;
+      }
+    }
+  }
+
+  .custom-checkbox-div {
+    @media screen and (max-width: 800px) {
+      gap: 10px;
+    }
+  }
+
+  .text-area {
+    margin-top: 2em;
+    label {
+      display: block;
+      color: #747474;
+      font-size: 0.8em;
+    }
+
+    textarea {
+      background: #ffffff;
+      box-shadow: inset -4px -4px 15px rgb(0 0 0 / 6%);
+      border-radius: 100px;
+      text-indent: 1rem;
+      margin-top: 0.5rem;
+      font-size: 13px;
+      border: none;
+      outline: none;
+      padding: 1rem 1rem;
+      max-width: 100%;
+      max-height: 155px;
+      min-height: 108px;
+      min-width: 100%;
+    }
+  }
+
+  .submit-div {
+    text-align: center;
+    button {
+      background: #ffb800;
+      box-shadow: 2px 2px 7px rgb(0 0 0 / 11%);
+      border-radius: 100px;
+      outline: none;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer;
+      width: 176px;
+      height: 30px;
+      margin: 2em 0;
+    }
+  }
+}

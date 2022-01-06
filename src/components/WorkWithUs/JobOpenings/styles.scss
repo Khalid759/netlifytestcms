@@ -1,0 +1,91 @@
+.wwu-openings {
+  margin-top: 84px;
+  max-width: 1144px;
+  margin: 0 auto;
+  width: 90%;
+  @media screen and (max-width: 800px) {
+    margin-bottom: 3rem;
+  }
+  .wwu-openings-heading {
+    font-size: 2rem;
+    text-decoration: underline;
+    padding-bottom: 2em;
+    line-height: 49px;
+    color: #243e60;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+    @media screen and (max-width: 800px) {
+      font-size: 1rem;
+      line-height: 25px;
+    }
+  }
+  // .wwu-openings-heading::before {
+  //   position: absolute;
+  //   background: #ffb800;
+  //   left: 50%;
+  //   content: "";
+  //   width: 300px;
+  //   height: 21px;
+  //   bottom: 3px;
+  //   z-index: -1;
+  //   @media screen and (max-width: 800px) {
+  //     left: 25%;
+  //     top: 10px;
+  //     width: 200px;
+  //     height: 17px;
+  //   }
+  // }
+  .wwu-openings-list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    margin-top: 53px;
+    li {
+      border-top: 1px solid #c4c4c4;
+      .wwu-openings-list-content {
+        padding: 0 1rem;
+        .wwu-openings-list-head {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 38px;
+          font-weight: bold;
+          font-size: 1.25em;
+          color: #243e60;
+          margin-bottom: 0.5rem;
+          @media screen and (max-width: 800px) {
+            flex-direction: column;
+            padding-top: 12px;
+            font-size: 1em;
+            margin-bottom: 0rem;
+          }
+          .apply_posting {
+            cursor: pointer;
+            @media screen and (max-width: 800px) {
+              margin: 0.5rem 0 1rem 0;
+            }
+          }
+        }
+        .wwu-openings-list-location {
+          font-size: 1em;
+          color: #7e7e7e;
+          padding-bottom: 53px;
+          @media screen and (max-width: 800px) {
+            padding-bottom: 34px;
+            font-size: 0.8em;
+          }
+          img {
+            width: 21px;
+            vertical-align: bottom;
+            @media screen and (max-width: 800px) {
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  }
+}

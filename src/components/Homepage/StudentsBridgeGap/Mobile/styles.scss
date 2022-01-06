@@ -1,0 +1,85 @@
+.home-students-container-mob {
+  overflow: hidden;
+  position: relative;
+  display: none;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+
+  .students-title-mob {
+    color: #7e7e7e;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 30px;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+  }
+
+  .yt-arrow-prev {
+    position: absolute;
+    z-index: 10;
+    top: 7em;
+    left: 1em;
+  }
+
+  .yt-arrow-next {
+    position: absolute;
+    z-index: 10;
+    top: 7em;
+    right: 1em;
+  }
+
+  .slick-slider {
+    position: relative;
+  }
+
+  .slick-track {
+    display: flex;
+    .slick-slide > div {
+      display: flex;
+      height: 100%;
+    }
+
+    .student-slider-card {
+      width: 100%;
+      flex-direction: column;
+      display: flex !important;
+      .student-img {
+        width: 80%;
+        margin: 0 auto;
+        z-index: 1;
+      }
+
+      .student-details {
+        text-align: center;
+        .name {
+          font-size: 0.9em;
+          margin-bottom: 0.5em;
+          font-weight: 800;
+        }
+
+        .designation {
+          font-size: 0.85em;
+          margin-bottom: 1em;
+        }
+
+        .description {
+          text-align: initial;
+          font-size: 0.8em;
+          line-height: 23px;
+        }
+      }
+
+      .student-details {
+        flex: 1;
+        background: #243e60;
+        padding: 2em;
+        padding-top: 7em;
+        color: #fff;
+        margin-top: -5em;
+      }
+    }
+  }
+}

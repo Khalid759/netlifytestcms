@@ -1,0 +1,82 @@
+.pbm-fee-container {
+  display: flex;
+  padding: 2rem 3.5rem;
+  max-width: 1050px;
+  background-color: #e5e5e5;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin: 4rem auto;
+  justify-content: space-between;
+  width: 95%;
+  @media screen and (max-width: 900px) {
+    padding: 1rem 2.5rem;
+    margin: 2rem auto;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 1rem 1.5rem;
+  }
+  .pbm-fee-info {
+    .pbm-fee-title {
+      font-weight: bold;
+      font-size: 2em;
+      color: #404040;
+      @media screen and (max-width: 900px) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 1em;
+      }
+    }
+    .pbm-fee-amount {
+      font-weight: bold;
+      font-size: 1.5em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #404040;
+      @media screen and (max-width: 900px) {
+        font-size: 1.2em;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 0.9em;
+      }
+    }
+    .pbm-fee-emi {
+      font-size: 1em;
+      color: #404040;
+      @media screen and (max-width: 900px) {
+        font-size: 0.8em;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 0.7em;
+      }
+    }
+  }
+  .pbm-apply-now-div {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    @media screen and (max-width: 900px) {
+      width: 35%;
+    }
+    .pbm-apply-now {
+      font-weight: bold;
+      font-size: 1em;
+      line-height: 17px;
+      text-align: center;
+      color: #ffffff !important;
+      display: inline-block;
+      width: 32vw;
+      background: #ffb800;
+      box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 100px;
+      padding-top: 1vw;
+      padding-bottom: 1vw;
+      cursor: pointer;
+      text-transform: uppercase;
+      @media screen and (max-width: 500px) {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

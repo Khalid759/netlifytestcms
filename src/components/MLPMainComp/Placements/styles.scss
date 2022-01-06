@@ -1,0 +1,265 @@
+.mlp-main-placements {
+  background: #f5f5f5;
+  color: #7e7e7e;
+  padding: 4em 0;
+  @media screen and (max-width: 900px) {
+    padding: 2em 0;
+  }
+  .placements-container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (max-width: 900px) {
+      width: 90%;
+    }
+  }
+
+  .placements-head {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 35px;
+    color: #f1ae13;
+    @media screen and (max-width: 900px) {
+      font-size: 1.5em;
+    }
+  }
+
+  .placements-description {
+    font-size: 1.1em;
+    margin: 2em auto;
+    max-width: 50em;
+    text-align: center;
+
+    @media screen and (max-width: 900px) {
+      font-size: 0.85em;
+      line-height: 1.5;
+      margin-top: 1.4em;
+    }
+
+    .placements-description-line-break {
+      display: block;
+    }
+
+    .placements-role {
+      display: block;
+      margin-top: 2em;
+    }
+  }
+
+  .role-head {
+    font-size: 1.4em;
+    color: #f1ae13;
+    margin-top: 4rem;
+    display: block;
+    @media screen and (max-width: 900px) {
+      font-size: 1.2em !important;
+    }
+  }
+
+  .placements-role-class {
+    margin: 2rem auto;
+    display: flex;
+    gap: 3rem;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+    }
+    .placement-grid-1 {
+      width: 55%;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    .placement-grid-2 {
+      width: 50%;
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+    .placements-role-class-sec {
+      .placements-role-class-head {
+        text-align: center;
+        color: #7e7e7e;
+        font-size: 1.15em;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 900px) {
+          font-size: 1.1em;
+          margin-bottom: 0.3rem;
+        }
+        h4 {
+          font-weight: normal;
+        }
+      }
+      .placements-role-class-desc {
+        text-align: center;
+        color: #404040;
+        font-size: 0.9em;
+        line-height: 26px;
+        @media screen and (max-width: 900px) {
+          line-height: 23px;
+        }
+      }
+    }
+  }
+
+  .recruiting-partner {
+    margin-top: 4em;
+    .mlp-student-slider {
+      width: 100%;
+      max-width: 1400px;
+      margin: 2.5em auto;
+      overflow: hidden;
+      text-align: center;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+
+      .slider-section-head {
+        color: #f1ae13;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-align: center;
+
+        @media screen and (max-width: 800px) {
+          font-size: 1.1em;
+        }
+      }
+
+      .batch-info {
+        font-size: 1em;
+        line-height: 133.4%;
+        text-align: center;
+        color: #404040;
+        width: 40%;
+        margin: 0.5em auto;
+
+        @media screen and (max-width: 800px) {
+          font-size: 0.8em;
+          width: 85%;
+        }
+      }
+    }
+    .recruiting-head {
+      font-weight: bold;
+      font-size: 1.7em;
+      line-height: 35px;
+      @media screen and (max-width: 900px) {
+        font-size: 1em;
+        line-height: 1.2;
+        margin-top: 1.4em;
+      }
+    }
+
+    .recruiting-decription {
+      font-size: 1.1em;
+      margin: 2em auto;
+      max-width: 50em;
+      @media screen and (max-width: 900px) {
+        font-size: 0.85em;
+        line-height: 1.5;
+        margin-top: 1.4em;
+      }
+    }
+    .recruiter-img {
+      @media screen and (max-width: 900px) {
+        display: none;
+      }
+    }
+    .recruiter-img-mb {
+      display: none;
+      @media screen and (max-width: 900px) {
+        display: block;
+      }
+    }
+  }
+
+  .placement-slider {
+    margin: 4em auto;
+    margin-bottom: initial;
+    overflow: hidden;
+    .slick-track {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-around;
+      text-align: initial;
+
+      .slick-slide > div {
+        height: 100%;
+      }
+    }
+    .card-type2-section {
+      @media screen and (max-width: 900px) {
+        padding: 1em;
+      }
+    }
+    .slick-dots {
+      display: flex !important;
+      justify-content: space-between;
+      width: 5em;
+      margin: 0 auto;
+      margin-top: 2em;
+      @media screen and (max-width: 900px) {
+        width: 4em;
+      }
+
+      li::marker {
+        color: transparent;
+      }
+      button {
+        opacity: 0.25;
+        color: black;
+        background: black;
+        width: 1.5em;
+        height: 1.5em;
+        font-size: 0.5em;
+        display: inline-block;
+        border-radius: 11px;
+        border: none;
+      }
+
+      .slick-active button {
+        color: #f1ae13;
+        opacity: 1;
+        background: #f1ae13;
+        // width: 5em;
+      }
+    }
+  }
+}
+
+.should-apply {
+  width: 85%;
+  margin: 8em auto;
+  max-width: 1200px;
+  text-align: center;
+  color: #7e7e7e;
+  @media screen and (max-width: 900px) {
+    margin: 6em auto;
+    width: 90%;
+  }
+  .should-title {
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 35px;
+    text-align: center;
+    color: #f1ae13;
+    margin: 1rem auto;
+    @media screen and (max-width: 900px) {
+      font-size: 1.4em;
+    }
+  }
+
+  .should-description {
+    font-size: 1.1em;
+    margin: 1em auto;
+    max-width: 50em;
+    font-weight: normal;
+    @media screen and (max-width: 900px) {
+      font-size: 0.8em;
+      margin: 1em auto;
+      max-width: 90%;
+      line-height: 1.7;
+    }
+  }
+}

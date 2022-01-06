@@ -1,0 +1,121 @@
+.kf-standards-container {
+  padding: 6em 0;
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/common/Vector-22.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  .standard-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5em;
+    align-items: center;
+
+    @media screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .standard-title {
+    h2 {
+      color: #7e7e7e;
+      font-weight: initial;
+      font-size: 1.8em;
+      text-transform: uppercase;
+      @media screen and (max-width: 800px) {
+        font-size: 1.2em;
+        width: 90%;
+        margin: 2em auto;
+        text-transform: initial;
+        text-align: center;
+      }
+    }
+
+    p {
+      font-size: 0.9em;
+      line-height: 163.9%;
+      color: #7e7e7e;
+      margin-top: 2em;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  .standard-points {
+    position: relative;
+
+    .arrow-one {
+      position: absolute;
+      top: 2em;
+      left: -3em;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .arrow-two {
+      position: absolute;
+      left: -3em;
+      top: 9em;
+
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    .arrow-three {
+      position: absolute;
+      left: -3em;
+      top: 16em;
+      @media screen and (max-width: 800px) {
+        display: none;
+      }
+    }
+    .point-div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2em;
+      @media screen and (max-width: 800px) {
+        flex-direction: column;
+      }
+
+      .num-deco {
+        min-width: 2em;
+        max-width: 2em;
+        background: #ffb800;
+        border-radius: 50%;
+        height: 2em;
+        color: white;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1em;
+
+        @media screen and (max-width: 800px) {
+          background: #243e60;
+        }
+      }
+
+      .point-desc {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 145.4%;
+        color: #243e60;
+
+        @media screen and (max-width: 800px) {
+          text-align: center;
+          font-size: 1em;
+          width: 75%;
+          margin: 1em auto;
+        }
+        .yellow-text {
+          color: #ffb800;
+        }
+      }
+    }
+  }
+}

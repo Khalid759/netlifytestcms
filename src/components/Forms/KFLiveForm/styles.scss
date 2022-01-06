@@ -1,0 +1,122 @@
+.kflive-custom-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 99;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.kflive-modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  @media screen and (min-width: 800px) {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 50%;
+  }
+  .kflive-close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .kflive-inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0.5em 1em;
+    @media screen and (min-width: 800px) {
+      flex-direction: row-reverse;
+      padding: 4em 2em;
+    }
+    .kflive-form-content {
+      width: 100%;
+      order: 2;
+      @media screen and (min-width: 800px) {
+        order: 1;
+        width: 40%;
+      }
+      .kflive-form-heading {
+        width: initial;
+        margin-bottom: 2em;
+        font-size: 1em;
+        color: #243e60;
+        @media screen and (min-width: 800px) {
+          font-size: 1.2em;
+          width: 20em;
+        }
+      }
+      .kflive-modal-form {
+        .kflive-label-wrap {
+          margin-bottom: 2em;
+          .kflive-form-label {
+            font-size: 14px;
+            line-height: 17px;
+            color: #7e7e7e;
+          }
+          .kflive-form-input {
+            background: #fff;
+            border: none;
+            border-radius: 100px;
+            box-shadow: inset -4px -4px 15px rgba(0, 0, 0, 0.06);
+            height: 30px;
+            margin-top: 0.5rem;
+            outline: none;
+            text-indent: 1rem;
+            width: 100%;
+          }
+          .kflive-error-msg {
+            color: red;
+            font-size: 0.8em;
+          }
+        }
+        .kflive-modal-form-btn {
+          background: #ffb800;
+          box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.11);
+          border-radius: 100px;
+          outline: none;
+          border: none;
+          color: #fff;
+          text-transform: uppercase;
+          cursor: pointer;
+          width: 185px;
+          height: 34px;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          @media screen and (min-width: 800px) {
+            margin: 0em;
+          }
+        }
+      }
+      .kflive-mod-success {
+        margin-top: 2em;
+        color: green;
+        font-weight: bold;
+      }
+    }
+    .kflive-event-content {
+      margin-bottom: 2em;
+      width: 100%;
+      @media screen and (min-width: 800px) {
+        width: 50%;
+      }
+    }
+  }
+}

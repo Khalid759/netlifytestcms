@@ -1,0 +1,56 @@
+.wwuan-header-container {
+  background-repeat: no-repeat;
+  background-size: 100% 40em;
+  background-position: center top;
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/Work_with_us/Apply_now/jd-background.webp);
+  width: 100%;
+  height: 40em;
+  position: relative;
+  @media screen and (max-width: 800px) {
+    background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/Work_with_us/Apply_now/jd-background-mb.webp);
+    height: 200px;
+    margin-top: 0;
+    background-size: 101% 200px;
+  }
+  .wwuan-header-content {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    left: 50%;
+    width: 90%;
+    max-width: 800px;
+    transform: translate(-50%, -70%);
+    .wwuan-header-content-heading {
+      font-weight: 800;
+      font-size: 3.7em;
+      margin: 0;
+      text-align: center;
+      color: #ffffff;
+      @media screen and (max-width: 800px) {
+        font-size: 1.5em;
+        margin-bottom: 0;
+      }
+    }
+    .wwuan-header-content-btn-wrap {
+      justify-content: center;
+      margin-top: 1rem;
+      display: none;
+      @media screen and (max-width: 800px) {
+        display: flex;
+      }
+      .wwuan-header-content-btn {
+        background: #ffb800;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #fff;
+        width: 124px;
+        height: 23px;
+        border: none;
+      }
+    }
+  }
+}

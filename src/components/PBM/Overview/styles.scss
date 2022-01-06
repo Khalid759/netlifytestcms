@@ -1,0 +1,189 @@
+.pbm-page-overview {
+  text-align: center;
+  color: #404040;
+  font-size: 1.5em;
+  line-height: 33px;
+  margin: 3em auto;
+
+  @media (max-width: 900px) {
+    .learn-bestMB-border {
+      background: #e5e5e5;
+      height: 1px;
+      width: 212px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+  .pbm-overview-1 {
+    text-align: center;
+    color: #404040;
+    line-height: 32px;
+    word-spacing: 2px;
+    font-size: 0.8em;
+    max-width: 874px;
+    margin: 40px auto 36px auto;
+    @media screen and (max-width: 900px) {
+      font-size: 0.7em;
+      padding: 0 1rem;
+      line-height: 25px;
+    }
+  }
+
+  .pbm-overview-2 {
+    margin-top: 2em;
+    text-align: center;
+    color: #404040;
+    font-size: 0.8em;
+    max-width: 842px;
+    margin: 40px auto 114px auto;
+    @media screen and (max-width: 900px) {
+      font-size: 0.7em;
+      padding: 0 1rem;
+      line-height: 25px;
+    }
+  }
+
+  .pbm-overview-content-2 {
+    direction: rtl;
+    @media screen and (max-width: 900px) {
+      direction: ltr;
+    }
+    .pbm-learning-creative {
+      @media screen and (max-width: 900px) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .pbm-overview-content-1 {
+    @media screen and (max-width: 900px) {
+      background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/PBM_main/Vector-24Mockup-1.png);
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      background-size: cover;
+      background-position: top;
+      margin-top: 3em;
+    }
+  }
+
+  .pbm-overview-content-3 {
+    background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/PBM_main/Vector-24Mockup.png);
+    display: flex;
+    align-items: center;
+    background-size: 100% 667px;
+    height: 667px;
+    margin-top: -8rem;
+    @media screen and (max-width: 900px) {
+      background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/PBM_main/Vector-24Mockup-1.png);
+      height: 667px;
+      background-size: cover;
+      margin-top: 0rem;
+    }
+  }
+}
+
+.pbm-yellow-txt {
+  color: #ffb800;
+  @media screen and (max-width: 900px) {
+    display: inline;
+  }
+  .pbm-div-title-block {
+    color: #404040;
+    display: block;
+    @media screen and (max-width: 900px) {
+      display: inline;
+    }
+  }
+}
+
+.pbm-expertise {
+  .pbm-main-text {
+    font-weight: 800;
+    line-height: 55px;
+    color: #404040;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 0.5rem;
+    @media screen and (max-width: 900px) {
+      line-height: 32px;
+      font-size: 24px;
+    }
+  }
+  .pbm-main-text-desc {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #404040;
+    width: 90%;
+    margin: 0 auto;
+    @media screen and (max-width: 900px) {
+      font-size: 0.6em;
+      width: 90%;
+      line-height: 20px;
+      margin: 1.2em auto;
+    }
+  }
+}
+
+.pbm-learning-seo {
+  max-width: 1200px;
+  width: 85%;
+  margin: 0 auto;
+  text-align: initial;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    display: block;
+    width: 90%;
+  }
+
+  .pbm-learning-txt {
+    .pbm-learning-container {
+      @media screen and (max-width: 900px) {
+        display: flex;
+        align-items: center;
+        direction: ltr;
+      }
+      .pbm-learning-img-count {
+        margin-right: 5px;
+        width: 160px;
+      }
+    }
+    width: 50%;
+    text-align: left;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+    .pbm-div-title {
+      font-weight: bold;
+      font-size: 1em;
+      line-height: 37px;
+      @media screen and (max-width: 900px) {
+        font-size: 0.75em;
+        line-height: 27px;
+      }
+    }
+
+    .pbm-div-description {
+      font-size: 0.7em;
+      line-height: 25px;
+      color: #404040;
+      @media screen and (max-width: 900px) {
+        font-size: 0.6em;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .pbm-learning-creative {
+    width: 47%;
+    @media screen and (max-width: 900px) {
+      width: 100%;
+      margin: 2rem auto;
+    }
+  }
+}

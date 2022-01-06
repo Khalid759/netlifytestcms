@@ -1,0 +1,57 @@
+.about-us-header-container {
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/about_us/about-us-banner-mob.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 18rem;
+  position: relative;
+  min-height: 18rem;
+  height: initial;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  @media (min-width: 800px) {
+    background-size: 100% 40rem;
+    height: 40rem;
+    width: 100%;
+    margin-top: 3rem;
+    background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/about_us/about-us-banner-desk.webp);
+  }
+
+  .about-us-header-content {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+    color: #ffffff;
+    @media (min-width: 500px) and (max-width: 700px) {
+      margin-top: 5rem;
+    }
+
+    .about-us-header-title {
+      font-size: 1.2em;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #ffb800;
+      line-height: 16px;
+      margin: 0 0 0.8rem 0;
+      @media screen and (min-width: 800px) {
+        font-size: 2.2em;
+        line-height: 55px;
+      }
+    }
+    .about-us-header-desc {
+      padding: 0;
+      text-align: left;
+      font-size: 1em;
+      line-height: 20px;
+      max-width: 200px;
+      @media screen and (min-width: 800px) {
+        font-size: 1.3em;
+        line-height: 33px;
+        color: #ffffff;
+        margin: 0 0 0.8rem 0;
+        max-width: 452px;
+      }
+    }
+  }
+}

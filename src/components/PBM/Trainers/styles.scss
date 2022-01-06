@@ -1,0 +1,90 @@
+.pbm-trainers {
+  @media (max-width: 800px) {
+    .learn-bestMB-border {
+      background: #e5e5e5;
+      height: 1px;
+      width: 212px;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
+  .pbm-trainers-head {
+    font-size: 2.3em;
+    line-height: 55px;
+    color: #404040;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    @media screen and (max-width: 900px) {
+      font-size: 1.5em;
+      line-height: 30px;
+      margin-bottom: 43px;
+    }
+  }
+  .pbm-trainers_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1050px;
+    margin: 0 auto;
+    .pbm-trainers_card {
+      max-width: 246px;
+      width: 100%;
+      height: 220px;
+      margin: 0.5rem;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-align: center;
+      position: relative;
+      @media screen and (max-width: 900px) {
+        max-width: 246px;
+        width: 44%;
+        height: 262px;
+      }
+      @media screen and (max-width: 350px) {
+        width: 100%;
+      }
+      .pbm-trainers_cart_img {
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+      .pbm-trainers_card-text {
+        position: absolute;
+        background: #ffb800;
+        padding: 0.2rem;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        height: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        @media screen and (max-width: 900px) {
+          height: 96px;
+        }
+        .pbm-trainers_card-head {
+          font-size: 1em;
+          line-height: 25px;
+          text-align: center;
+          color: #ffffff;
+          font-weight: bold;
+          @media screen and (max-width: 900px) {
+            font-size: 0.9em;
+            line-height: 21px;
+          }
+        }
+        .pbm-trainers_card-desc {
+          font-size: 0.7em;
+          line-height: 14px;
+          color: #ffffff;
+          @media screen and (max-width: 900px) {
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

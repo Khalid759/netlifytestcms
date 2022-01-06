@@ -1,0 +1,62 @@
+.home-top-companies {
+  padding: 4em 0;
+  .top-companies-head {
+    position: relative;
+    color: #7e7e7e;
+    text-align: center;
+    font-size: 1.6em;
+    line-height: 37px;
+    width: 25em;
+    margin: 0 auto;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 800px) {
+      width: initial;
+      font-size: 1.2em;
+      line-height: 20px;
+      text-transform: initial;
+    }
+
+    .bold-text {
+      font-weight: 800;
+    }
+
+    .yellow-line-1:before {
+      content: " ";
+      position: absolute;
+      width: 8em;
+      background: #ffb800;
+      height: 0.6em;
+      top: 0.5em;
+      z-index: -1;
+      margin-left: -0.3em;
+      @media screen and (max-width: 800px) {
+        height: 0.2em;
+        top: 0.8em;
+      }
+    }
+    .yellow-line-2:before {
+      content: " ";
+      position: absolute;
+      width: 8em;
+      background: #ffb800;
+      height: 0.6em;
+      bottom: 0;
+      right: 5em;
+      z-index: -1;
+      margin-left: -0.3em;
+      @media screen and (max-width: 800px) {
+        height: 0.2em;
+        right: 2.5em;
+      }
+    }
+    .new-line {
+      display: block;
+
+      @media screen and (max-width: 800px) {
+        display: inline-block;
+      }
+    }
+  }
+}

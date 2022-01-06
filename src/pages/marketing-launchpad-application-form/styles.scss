@@ -1,0 +1,690 @@
+.mlp_form-container {
+  font-family: "Montserrat";
+  margin-top: 1em;
+
+  .comp-app-btn {
+    display: none;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 133.4%;
+      text-align: center;
+      border: 1px solid #f1ae13;
+      border-radius: 5px;
+      color: #f1ae13;
+      padding: 0.7rem 2rem;
+      width: 70%;
+      margin: 2em auto;
+    }
+  }
+
+  .mlp-divider {
+    border: 1px solid #94949440;
+    width: 90%;
+    max-width: 1400px;
+    margin: 3em auto;
+
+    @media screen and (max-width: 800px) {
+      margin: 2em auto;
+    }
+  }
+
+  .hero-div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: initial;
+    }
+
+    .hero-sec-container {
+      color: #7e7e7e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 45%;
+
+      .mlp-form-video-container {
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+        .mlp-video-flex {
+          padding: 2rem;
+          padding-bottom: 0rem;
+          padding-top: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 80%;
+
+          .mlp-video-icon-wrap::after {
+            content: "";
+            z-index: -1;
+            -webkit-animation: mlpVideoIcon 2s infinite;
+            animation: mlpVideoIcon 2s infinite;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: inline-block;
+            background-color: #ffb8004f;
+            border-radius: 100px;
+          }
+          .mlp-video-icon-wrap {
+            cursor: pointer;
+            min-width: 75px;
+            margin: 0 auto;
+            position: relative;
+            @media screen and (max-width: 800px) {
+              width: 65px;
+              margin: 0;
+            }
+
+            .mlp-video-icon-bg-light {
+              .mlp-video-icon-bg-dark {
+                padding: 0.8rem;
+                img {
+                  display: block;
+                  width: 100%;
+                }
+              }
+            }
+          }
+
+          .mlp-video-text {
+            text-align: left;
+            cursor: pointer;
+            color: #ffb800;
+            font-size: 1em;
+            margin-left: 0.5rem;
+            .mlp-video-subheading {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        width: 85%;
+      }
+
+      .page-logo {
+        width: 17em;
+        @media screen and (max-width: 900px) {
+          width: 13em;
+        }
+      }
+
+      .trademark {
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 20px;
+        color: #243e60;
+        @media screen and (max-width: 900px) {
+          display: none;
+        }
+      }
+
+      .hired-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 900px) {
+          margin-top: 1em;
+        }
+
+        .sec-title {
+          border-top: 1px solid #f1ae13;
+          padding-top: 2em;
+          width: 20em;
+          text-align: center;
+          font-size: 0.9em;
+          @media screen and (max-width: 900px) {
+            padding-top: 1em;
+          }
+        }
+        .sec-subtitle {
+          display: none;
+
+          @media screen and (max-width: 900px) {
+            display: block;
+            font-size: 0.8em;
+            font-weight: 500;
+            line-height: 17px;
+            text-align: center;
+            color: #000000;
+            margin-top: 1em;
+          }
+        }
+        .sec-img {
+          width: 20em;
+          margin-top: 2em;
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+        }
+
+        .sec-description {
+          text-align: center;
+          font-size: 1.1em;
+          @media screen and (max-width: 900px) {
+            display: none;
+          }
+
+          .desc-2 {
+            position: relative;
+
+            .text-strokes {
+              width: 265px;
+              position: absolute;
+              right: 45px;
+              bottom: -21px;
+            }
+          }
+
+          .highlight-grey {
+            background: lightgrey;
+            color: black;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .spec-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.37);
+    z-index: 50;
+    transition: 0.7s;
+  }
+  .spec-modal {
+    position: fixed;
+    text-align: right;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    width: 700px;
+    height: 420px;
+    transition: 0.5s ease-out;
+    border-radius: 10px;
+    max-height: 90%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: 900px) {
+      max-height: 250px;
+      padding: 0.8rem;
+      width: 95%;
+      max-width: 95%;
+    }
+    .spec-modal-cross {
+      margin-left: 100%;
+      width: 1.5rem;
+      display: block;
+      margin-bottom: 0.6rem;
+      cursor: pointer;
+      @media screen and (max-width: 900px) {
+        margin-left: 95%;
+        width: 1rem;
+      }
+    }
+  }
+  @keyframes mlpVideoIcon {
+    from {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+    50% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+    }
+  }
+  .card-section-div {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    .mlp-form-mob-video {
+      width: 300px;
+      height: 170px;
+      margin: 40px auto 50px auto;
+      position: relative;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        color: transparent;
+      }
+      .mlp-video-flex {
+        padding-right: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+
+        @media screen and (max-width: 800px) {
+          padding: 2rem;
+          padding-bottom: 0rem;
+          padding-right: 0rem;
+          top: 0;
+          position: absolute;
+          z-index: 2;
+        }
+        .mlp-video-icon-wrap::after {
+          content: "";
+          z-index: -1;
+          -webkit-animation: mlpVideoIcon 2s infinite;
+          animation: mlpVideoIcon 2s infinite;
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          display: inline-block;
+          background-color: #ffb8004f;
+          border-radius: 100px;
+        }
+        .mlp-video-icon-wrap {
+          margin: 0 auto;
+          position: relative;
+          @media screen and (max-width: 800px) {
+            min-width: 60px;
+            padding: 0.5rem;
+            height: 60px;
+          }
+
+          .mlp-video-icon-bg-light {
+            .mlp-video-icon-bg-dark {
+              img {
+                display: block;
+                width: 100%;
+                position: static;
+              }
+            }
+          }
+        }
+
+        .mlp-video-text {
+          text-align: left;
+          cursor: pointer;
+          color: #ffb800;
+          font-size: 0.8em;
+          margin-left: 0.5rem;
+          .mlp-video-subheading {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .mlp-form-mob-video::before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: #000;
+      opacity: 0.6;
+      z-index: 1;
+    }
+    .card-head {
+      font-weight: bold;
+      font-size: 1.1em;
+      line-height: 133.4%;
+      text-align: center;
+      color: #404040;
+      margin: 0 auto;
+      margin-bottom: 3em;
+      display: block;
+
+      @media screen and (max-width: 600px) {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    .card-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 33%;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: initial;
+        margin-bottom: 1em;
+      }
+
+      .card-title {
+        color: #f1ae13;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: 0.5em 0;
+
+        @media screen and (max-width: 600px) {
+          font-size: 0.8em;
+          margin-right: 0.5em;
+        }
+      }
+      .card-icon {
+        width: 4.5em;
+
+        @media screen and (max-width: 600px) {
+          margin-right: 1em;
+          width: 15%;
+        }
+      }
+
+      .card-info {
+        width: 70%;
+        div {
+          @media screen and (max-width: 600px) {
+            display: inline;
+          }
+        }
+      }
+
+      .card-description {
+        font-size: 1em;
+        line-height: 150.4%;
+        color: #404040;
+
+        @media screen and (max-width: 800px) {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  .mlpForm-admission {
+    width: 90%;
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+
+    .section-head {
+      color: #f1ae13;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .section-info {
+      font-size: 1em;
+      line-height: 133.4%;
+      color: #404040;
+      margin: 0.5em 0;
+      @media screen and (max-width: 900px) {
+        font-size: 0.8em;
+        width: 85%;
+        margin: 0.5em auto;
+      }
+    }
+
+    .admission-cards {
+      text-align: initial;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
+
+      .admission-card {
+        margin: 2em;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 900px) {
+          flex-direction: column;
+          margin: 1em 0;
+        }
+
+        .round-title {
+          margin-left: 1em;
+          font-weight: bold;
+          color: #404040;
+          font-size: 1.1em;
+          @media screen and (max-width: 900px) {
+            font-size: 0.8em;
+            text-align: center;
+          }
+          .new-line {
+            display: block;
+            @media screen and (max-width: 900px) {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+    .further-detail {
+      display: none;
+      @media screen and (max-width: 900px) {
+        display: block;
+        font-size: 0.8em;
+        width: 85%;
+        margin: 0.5em auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .mlp-student-slider {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2.5em auto;
+    overflow: hidden;
+    text-align: center;
+
+    @media screen and (max-width: 900px) {
+      width: 100%;
+    }
+
+    .slider-section-head {
+      color: #f1ae13;
+      font-weight: bold;
+      font-size: 1.3em;
+      text-align: center;
+
+      @media screen and (max-width: 800px) {
+        font-size: 1.1em;
+      }
+    }
+
+    .batch-info {
+      font-size: 1em;
+      line-height: 133.4%;
+      text-align: center;
+      color: #404040;
+      width: 40%;
+      margin: 0.5em auto;
+
+      @media screen and (max-width: 800px) {
+        font-size: 0.8em;
+        width: 85%;
+        margin: 0.8em auto;
+      }
+
+      a {
+        color: #1344f1;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+
+    .placement-comp-div {
+      .placement-desktop {
+        display: block;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+
+      .placement-mob {
+        display: none;
+        @media screen and (max-width: 800px) {
+          display: block;
+          margin-bottom: 3rem;
+        }
+      }
+
+      .placement-desktop-2 {
+        display: block;
+        margin-top: 3rem;
+        @media screen and (max-width: 800px) {
+          display: none;
+        }
+      }
+      .placement-mob-2 {
+        display: none;
+        margin-top: 3rem;
+        @media screen and (max-width: 800px) {
+          display: block;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+
+    .slider-head {
+      text-align: center;
+      color: #f1ae13;
+      font-weight: 600;
+      font-size: 1.3em;
+      margin-top: 2em;
+      @media screen and (max-width: 800px) {
+        font-size: 1.1em;
+      }
+    }
+
+    .slick-track {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-around;
+      text-align: initial;
+
+      .slick-slide > div {
+        height: 100%;
+      }
+    }
+
+    .slick-dots {
+      display: flex !important;
+      justify-content: space-between;
+      width: 12em;
+      margin: 0 auto;
+      margin-top: 2em;
+
+      li::marker {
+        color: transparent;
+      }
+      button {
+        color: #7e7e7e;
+        background: #7e7e7e;
+        width: 2.3em;
+        height: 1em;
+        font-size: 0.5em;
+        display: inline-block;
+        border-radius: 11px;
+        border: none;
+      }
+
+      .slick-active button {
+        color: #f1ae13;
+        background: #f1ae13;
+        width: 5em;
+      }
+    }
+
+    .student-card {
+      background: #ffffff;
+      color: #747474;
+      box-shadow: 0px 0px 23px rgb(64 64 64 / 10%);
+      border-radius: 8px;
+      padding: 1em 2em;
+      height: 100%;
+      // width: 40em;
+      margin: 0 1em;
+      font-size: 0.9em;
+      @media screen and (max-width: 900px) {
+        padding: 1.5em;
+        font-size: 0.7em;
+      }
+
+      .student-info-section {
+        display: flex;
+        // align-items: center;
+
+        .student-name {
+          color: #f1ae13;
+          font-weight: bold;
+        }
+
+        .placedAt {
+          font-weight: bold;
+        }
+
+        .student-info-img {
+          width: 5em;
+          margin-right: 1em;
+        }
+
+        .student-info-div {
+          border-bottom: 0.25px solid #f1ae136b;
+          padding-bottom: 0.5em;
+        }
+      }
+
+      .student-info-desc-div {
+        margin-top: 1em;
+        font-style: italic;
+        font-size: 1em;
+        @media screen and (max-width: 900px) {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}

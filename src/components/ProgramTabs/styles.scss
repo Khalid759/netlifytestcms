@@ -1,0 +1,110 @@
+.program-tabs-container {
+  .program-tab-head {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 35px rgb(0 0 0 / 20%);
+    padding: 1em;
+
+    .program-tab-head-name {
+      font-weight: 800;
+      cursor: pointer;
+      padding: 0.8em 3em;
+      border-radius: 5px;
+      @media screen and (max-width: 800px) {
+        padding: 0.8em;
+        font-size: 0.7em;
+      }
+    }
+
+    .active-tab {
+      background-color: #ffb800;
+      color: white;
+    }
+  }
+
+  .program-tab-content {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3em;
+    text-align: initial;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .program-tab-card {
+      &:last-child {
+        margin-right: initial;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      cursor: pointer;
+      width: 28em;
+      margin-right: 1.5em;
+      border-radius: 10px;
+      box-shadow: 4px 4px 25px rgb(0 0 0 / 7%);
+      background: white;
+      transition: transform 1s ease;
+
+      @media screen and (max-width: 800px) {
+        width: 100%;
+        margin-right: initial;
+        margin-bottom: 2em;
+      }
+
+      .program-card-img {
+        height: 13em;
+        img {
+          height: 13em;
+        }
+      }
+
+      .program-card-info {
+        background: #ffffff;
+        padding: 1em;
+        border-radius: 10px;
+        .program-card-title {
+          color: #ffb800;
+          font-weight: 700;
+          font-size: 120%;
+          margin-bottom: 0.5em;
+          @media screen and (max-width: 800px) {
+            font-size: 100%;
+          }
+        }
+
+        .program-card-trademark {
+          color: #243e60;
+          margin-bottom: 0.5em;
+          font-size: 95%;
+          @media screen and (max-width: 800px) {
+            font-size: 85%;
+          }
+        }
+
+        .program-card-about {
+          margin-top: 1.5em;
+          color: #243e60;
+          font-size: 80%;
+          line-height: 20px;
+
+          @media screen and (max-width: 800px) {
+            font-size: 75%;
+          }
+        }
+      }
+    }
+  }
+
+  .program-note {
+    color: #7e7e7e;
+    font-size: 95%;
+    margin-top: 4em;
+    @media screen and (max-width: 800px) {
+      margin-top: 2em;
+    }
+  }
+}

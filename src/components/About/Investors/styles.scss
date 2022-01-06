@@ -1,0 +1,83 @@
+.about-us-investors {
+  @media screen and (min-width: 800px) {
+    margin: 40px;
+  }
+  .about-us-investors-wrap {
+    max-width: 1138px;
+    width: 90%;
+    margin: 0 auto;
+    .about-us-investors-head {
+      text-align: center;
+      margin-bottom: 85px;
+      .about-us-investors-head-heading {
+        width: fit-content;
+        color: #243e60;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 auto;
+        font-size: 1em;
+        @media screen and (min-width: 800px) {
+          font-size: 2em;
+        }
+        .about-us-mb-block {
+          display: block;
+          @media screen and (min-width: 800px) {
+            display: inline;
+          }
+        }
+      }
+      .about-us-investors-head-heading::before {
+        height: 10px;
+        bottom: 2px;
+        left: 2rem;
+        width: 100%;
+        position: absolute;
+        content: "";
+        background: #ffb800;
+        z-index: -1;
+        @media screen and (min-width: 800px) {
+          width: 70%;
+          left: 12rem;
+          height: 21px;
+          bottom: 0;
+        }
+      }
+    }
+    .about-us-investors-cards {
+      grid-row-gap: 70px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr;
+      @media screen and (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+      }
+      .about-us-investors-card {
+        text-align: center;
+        .about-us-investor-img {
+          max-width: 223px;
+          width: 100%;
+          margin-bottom: 45px;
+          @media screen and (min-width: 800px) {
+            max-width: 198px;
+          }
+        }
+        .about-us-investors-card-content {
+          .about-us-investors-card-content-name {
+            font-weight: bold;
+            font-size: 0.9em;
+            line-height: 24px;
+            color: #243e60;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+          }
+          .about-us-investors-card-content-role {
+            font-size: 0.9em;
+            line-height: 24px;
+            color: #7e7e7e;
+          }
+        }
+      }
+    }
+  }
+}

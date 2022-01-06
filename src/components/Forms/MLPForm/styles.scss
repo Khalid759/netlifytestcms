@@ -1,0 +1,478 @@
+.main-mlp-form {
+  background: #ffffff;
+  box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
+  width: 50%;
+
+  @media screen and (max-width: 900px) {
+    width: 90%;
+    margin-top: 2em;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  .form-content {
+    padding: 2em 5em;
+
+    @media screen and (max-width: 600px) {
+      padding: 1.5em;
+      margin-top: -2em;
+    }
+
+    .form-input {
+      input,
+      select {
+        padding: 0.5em;
+        margin-bottom: 0.5em;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: "Montserrat";
+        color: #7e7e7e;
+        font-size: 13px;
+        border: solid;
+        border-width: 1px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-color: #7e7e7e;
+        outline: none;
+        background: none;
+        outline: none;
+      }
+    }
+
+    // .spec-dates .date label:hover {
+    //   background: white !important;
+    //   border: initial !important;
+    //   color: initial !important;
+    // }
+
+    .spec-dates .date input[name="specialisation"]:checked + label {
+      background: rgba(19, 68, 241, 0.06);
+      border: 0.25px solid #1344f1;
+      color: #1344f1;
+    }
+
+    .spec-dates .date input[name="specialisation"]:disabled + label {
+      cursor: not-allowed;
+    }
+
+    .spec-dates .date input[name="specialisation"]:disabled + label:hover {
+      border: 0.25px solid transparent;
+      color: inherit;
+    }
+
+    .slot-group {
+      display: block;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -o-user-select: none;
+
+      @media screen and (max-width: 600px) {
+        font-size: 0.8em;
+      }
+
+      .slot-dates {
+        width: 70%;
+        margin-top: 1em;
+
+        .date {
+          label {
+            margin: initial;
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+
+    .spec-dates {
+      width: 80% !important;
+      margin-top: 1em;
+      @media screen and (max-width: 600px) {
+        width: 100% !important;
+      }
+      .date {
+        width: 160px !important;
+        label {
+          padding: 0.8em 0.4em !important;
+          margin: initial;
+          margin-right: 1em;
+          .spec-text {
+            font-size: 0.8em !important;
+          }
+        }
+      }
+    }
+
+    .slot-group .spec-dates {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.3em;
+      // margin-left: 0.5em;
+      @media screen and (max-width: 600px) {
+        width: 85%;
+        margin-top: 0.7em;
+        gap: 0.5rem;
+        margin-left: 0;
+      }
+    }
+
+    .spec-dates .date input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .spec-dates .date {
+      /* border: 1px solid #c4c4c4; */
+      width: 140px;
+      padding: 0.5em 0;
+      font-size: 0.8em;
+    }
+
+    .spec-dates .date label {
+      border: 1px solid #c4c4c4;
+      padding: 0.5em 0;
+      display: block;
+      // margin-left: 1.5em;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    // .spec-dates .date label:hover {
+    //   background: rgba(19, 68, 241, 0.06);
+    //   border: 0.25px solid #1344f1;
+    //   color: #1344f1;
+    // }
+
+    // .whatsapp_optin {
+
+    // }
+
+    .opt-out-text {
+      display: block;
+      color: #7e7e7e;
+      font-size: 10px;
+      padding-left: 30px;
+      padding-bottom: 5px;
+      // margin-top: -0.1em;
+    }
+
+    .optin-container {
+      color: #7e7e7e;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 30px;
+      // margin-bottom: 12px;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 11px;
+      text-align: initial;
+
+      .wrapper-check {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 600px) {
+          // display: block;
+        }
+      }
+
+      img {
+        width: 9em;
+        margin-left: 0.3em;
+        @media screen and (max-width: 600px) {
+          display: inline-block;
+          width: 25%;
+        }
+      }
+    }
+
+    .optin-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .optin-checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      border: 1px solid #c4c4c42e;
+      background-color: #eee;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .optin-container input:checked ~ .optin-checkmark {
+      background-color: white;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .optin-checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .optin-container input:checked ~ .optin-checkmark:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .optin-container .optin-checkmark:after {
+      left: 8px;
+      top: 2px;
+      width: 4px;
+      height: 12px;
+      border: solid #f1ae13;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .notice {
+      font-size: 0.75em;
+      text-align: center;
+      color: #7e7e7e;
+    }
+
+    .alreadyExists {
+      color: #ea5824;
+      text-align: center;
+      font-size: 0.9em;
+      width: 90%;
+      a {
+        font-weight: 600;
+        font-style: italic;
+        text-decoration: underline;
+        color: #1344f1;
+      }
+    }
+
+    .mlp-submit {
+      .submit-btn {
+        cursor: pointer;
+        // max-width: 335px;
+        padding: 1em 0;
+        margin: 0 auto;
+        width: 100%;
+
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        text-align: center;
+
+        @media screen and (max-width: 600px) {
+          padding: 0.5em 0;
+        }
+      }
+
+      .gray-bg {
+        background: #c4c4c4;
+      }
+
+      .yellow-bg {
+        background: #f1ae13;
+      }
+    }
+  }
+  .help-desk {
+    margin-top: 5em;
+
+    .help-head {
+      font-weight: 600;
+      font-size: 0.9em;
+      color: #7e7e7e;
+      margin-bottom: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .right-line {
+        width: 30%;
+        height: 0.1em;
+        background: #7e7e7e59;
+
+        @media screen and (max-width: 600px) {
+          width: 15%;
+        }
+      }
+
+      .left-line {
+        width: 2em;
+        height: 0.1em;
+        background: #7e7e7e59;
+        width: 50%;
+      }
+    }
+    .help-email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 275px;
+      margin: 0 auto;
+      color: #7e7e7e;
+
+      .help-mail-icon {
+        margin-right: 1em;
+      }
+
+      .help-mail {
+        font-size: 0.8em;
+        text-align: initial;
+        a {
+          color: #1344f1;
+          font-weight: 600;
+          font-style: italic;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .thank-you-screen {
+    padding: 3em 0;
+    .thank-you-container {
+      .submit-strip {
+        background: #f1ae13;
+        color: #ffffff;
+        padding: 1em 0;
+        font-weight: bold;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 600px) {
+          font-size: 0.8em;
+        }
+
+        .tick-div {
+          margin-right: 0.5em;
+        }
+      }
+
+      .greeting {
+        font-size: 1em;
+        line-height: 19px;
+        text-align: center;
+        color: #7e7e7e;
+
+        @media screen and (max-width: 600px) {
+          font-size: 0.9em;
+        }
+
+        .user-name {
+          font-size: 1.5em;
+          text-transform: capitalize;
+          line-height: 26px;
+          text-align: center;
+          color: #f1ae13;
+          margin-top: 0.5em;
+          margin-bottom: 1.5em;
+          font-weight: bold;
+        }
+      }
+
+      .info {
+        font-size: 1em;
+        line-height: 19px;
+        text-align: center;
+        color: #7e7e7e;
+        margin: 0 auto;
+        margin-bottom: 19px;
+        max-width: 23em;
+
+        @media screen and (max-width: 600px) {
+          font-size: 0.9em;
+        }
+
+        .choosen-date {
+          font-weight: 600;
+        }
+      }
+
+      .chat-with-us {
+        width: 25em;
+        margin: 3em auto;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+
+      .more-program {
+        font-style: italic;
+        @media screen and (max-width: 600px) {
+          font-size: 0.9em;
+        }
+
+        a {
+          color: #1344f1;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .inEligible-container {
+    padding: 3em 0;
+
+    text-align: center;
+    .inEligible-text {
+      width: 55%;
+      margin: 0 auto;
+      margin-bottom: 2.5em;
+      color: #404040;
+      font-size: 0.9em;
+      font-weight: 600;
+
+      @media screen and (max-width: 600px) {
+        width: 85%;
+      }
+    }
+
+    .process-text,
+    .instagram-text {
+      width: 75%;
+      margin: 0 auto;
+      margin-bottom: 2.5em;
+      color: #404040;
+      font-size: 0.9em;
+
+      @media screen and (max-width: 600px) {
+        width: 90%;
+      }
+    }
+
+    .process-divider {
+      border: 0.5px solid #f1ae1336;
+      margin: 4em auto;
+      width: 85%;
+    }
+
+    .kraft-insta-link {
+      margin: 0 auto;
+      width: 23em;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+}

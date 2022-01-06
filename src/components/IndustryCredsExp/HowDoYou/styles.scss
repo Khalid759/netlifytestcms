@@ -1,0 +1,37 @@
+.ice-howdoyou {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+  .ice-howdoyou-title {
+    text-align: center;
+    color: #404040;
+    font-weight: 800;
+    font-size: 1.375em;
+    line-height: 153.4%;
+    @media screen and (min-width: 800px) {
+      font-size: 2em;
+    }
+    .yellow-txt {
+      color: #ffb800;
+    }
+    .desk-newline {
+      @media screen and (min-width: 800px) {
+        display: block;
+      }
+    }
+  }
+
+  .ice-howdoyou-description {
+    margin-top: 2em;
+    text-align: center;
+    font-size: 0.75em;
+    line-height: 153.4%;
+    color: #7e7e7e;
+    @media screen and (min-width: 800px) {
+      font-size: 1em;
+      // width: 50em;
+      margin: 2em auto;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.mob-nav-wrap {
+  // padding: 1em;
+  max-width: 1144px;
+  margin: 0 auto;
+  width: 100%;
+  display: none;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+  .mob-head-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+
+    .mob-head-logo {
+      width: 7em;
+    }
+
+    .mob-nav-logo {
+      // width: 5em;
+      cursor: pointer;
+
+      img {
+        width: 1.5em;
+      }
+    }
+  }
+
+  .mob-nav {
+    margin-top: 1em;
+    // padding-top: 1em;
+    // padding-bottom: 1em;
+    background: #f2f3f5;
+  }
+  .mob-head-link {
+    font-size: 0.8em;
+    cursor: pointer;
+    border-bottom: 1px solid #dadada;
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-down-arrow {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid black;
+    }
+  }
+
+  .nav-list:hover {
+    color: red;
+  }
+
+  .nav-programs {
+    .nav-sub-one {
+      padding-left: 0.5em;
+    }
+
+    .nav-sub-two {
+      padding-left: 2em;
+    }
+  }
+
+  .nav-benefits {
+    .nav-sub-one {
+      padding-left: 2em;
+    }
+  }
+
+  .nav-resources {
+    .nav-sub-one {
+      padding-left: 2em;
+    }
+  }
+
+  .nav-forcompaines {
+    .nav-sub-one {
+      padding-left: 2em;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.bb-program-benefitsBG {
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/common/Vector-24Mockup.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 48em;
+  height: 51em;
+  position: relative;
+  padding-top: 7rem;
+  @media screen and (max-width: 800px) {
+    background-size: 100% 30em;
+    height: 37em;
+  }
+  .bb-highlight-heading {
+    font-size: 2em;
+    text-align: center;
+    color: #7e7e7e;
+    width: fit-content;
+    position: relative;
+    margin: 0 auto 3rem auto;
+    z-index: 1;
+    font-weight: normal;
+    @media screen and (max-width: 800px) {
+      font-size: 1em;
+      margin: 0 auto 2rem auto;
+    }
+  }
+  .bb-highlight-heading::before {
+    content: "";
+    position: absolute;
+    width: 304px;
+    height: 25px;
+    background: #ffb800;
+    z-index: -1;
+    bottom: 2px;
+    left: 30%;
+    @media screen and (max-width: 800px) {
+      width: 160px;
+      height: 10px;
+    }
+  }
+  .bb-slider-nav {
+    margin-bottom: 30px;
+    .slick-list {
+      @media screen and (max-width: 800px) {
+        padding: 0px 35px !important;
+      }
+    }
+    .slick-track {
+      display: flex !important;
+      margin: 0 auto;
+      .slick-slide {
+        transition: all 0.1s ease-in;
+        outline: none;
+        margin: 0 1rem;
+      }
+      .slick-current {
+        .bb-item {
+          border-bottom: 11px solid #ffb800;
+        }
+      }
+    }
+    .bb-item {
+      background: #ffffff;
+      border-radius: 15px;
+      height: 146px;
+      margin: 0 1rem;
+      padding: 1.5rem 1rem 0 1rem;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 11px solid #ffb800;
+      }
+      .bb-item-title {
+        font-weight: 600;
+        font-size: 0.9em;
+        line-height: 22px;
+        color: #ffb800;
+        margin: 0 !important;
+      }
+    }
+  }
+  .bb-slider-for {
+    max-width: 1142px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    @media screen and (max-width: 800px) {
+      margin-top: 50px;
+    }
+    .bb-benefits-desc {
+      font-size: 0.9em;
+      line-height: 26px;
+      color: #243e60;
+      outline: none;
+      @media screen and (max-width: 800px) {
+        font-size: 0.8em;
+        line-height: 20px;
+      }
+    }
+  }
+  button {
+    display: none !important;
+  }
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    .slick-track {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: flex !important;
+      .slick-slide {
+        display: block;
+      }
+    }
+  }
+}

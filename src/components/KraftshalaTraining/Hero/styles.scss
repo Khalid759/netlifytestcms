@@ -1,0 +1,41 @@
+.kf-hiring-container {
+  background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/common/Hero-Image-Hiring-page-Shadow-Effect-Desktop.png),
+    url(https://kfwebassets.s3.ap-south-1.amazonaws.com/common/Hero-image-Hiring-page-desktop-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 40em;
+  position: relative;
+  height: 40em;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    background-image: url(https://res.cloudinary.com/judiscloud/image/upload/v1581667381/Hero_Image_Shadow_Effect_Mobile_udwvmr.png),
+      url(https://res.cloudinary.com/judiscloud/image/upload/v1582700296/Hero-Image-Hiring-Page-Mobile_rjped3.png);
+    height: 30em;
+    background-size: 100% 30em;
+  }
+  .hero-txt {
+    color: #ffffff;
+    width: 55%;
+    @media screen and (max-width: 800px) {
+      width: 70%;
+    }
+
+    h1 {
+      line-height: 150%;
+      @media screen and (max-width: 800px) {
+        font-size: 1.3em !important;
+        line-height: 1.2em !important;
+      }
+    }
+
+    p {
+      margin-top: 1em;
+      line-height: 150%;
+    }
+  }
+}

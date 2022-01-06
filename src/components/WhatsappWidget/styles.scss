@@ -1,0 +1,15 @@
+.whatsapp-wid-container {
+  position: fixed;
+  bottom: 0;
+  right: 2em;
+  @media screen and (max-width: 800px) {
+    width: 4em;
+    right: 1em;
+  }
+  img {
+    width: 5.5em;
+    @media screen and (max-width: 800px) {
+      width: 4em;
+    }
+  }
+}

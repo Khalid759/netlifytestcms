@@ -1,0 +1,135 @@
+.kflive-slick-carousel {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 13rem;
+  margin-top: 13rem;
+  overflow-x: clip;
+  @media screen and (min-width: 800px) {
+    width: 85%;
+    margin-bottom: 17rem;
+  }
+  .kflive-review-heading {
+    font-size: 1em;
+    position: absolute;
+    text-align: center;
+    color: #243e60;
+    left: 50%;
+    top: -78px;
+    width: 100%;
+    transform: translateX(-50%);
+    font-weight: normal;
+    @media screen and (min-width: 800px) {
+      font-size: 2em;
+    }
+  }
+  .kflive-bg {
+    background: rgba(36, 62, 96, 0.09);
+    max-width: 886px;
+    width: 90%;
+    margin: 0 auto;
+    height: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+    top: -7rem;
+    @media screen and (min-width: 800px) {
+      height: 590px;
+    }
+  }
+  .kflive-wrap {
+    max-width: 1144px;
+    margin: 0 auto;
+    width: 90%;
+    .kflive-heroSlider-fixed {
+      .slick-slider {
+        position: relative;
+        height: 100%;
+        @media screen and (min-width: 800px) {
+          top: 2rem;
+        }
+        .slick-arrow {
+          position: absolute;
+          bottom: -90px;
+          width: 40px;
+          height: 40px;
+          background: #fff;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          border: none;
+          margin-bottom: 1em;
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+          z-index: 1;
+          @media screen and (min-width: 800px) {
+            bottom: -120px;
+          }
+        }
+        .slick-prev {
+          left: 35%;
+          box-shadow: 4px 4px 4px rgb(0 0 0 / 15%);
+          background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/kraftshalaLiveSeries/left-arrow.svg);
+          background-repeat: no-repeat;
+          transform: rotate(180deg);
+          background-position: center;
+          background-size: 40%;
+          @media screen and (min-width: 800px) {
+            left: 43%;
+          }
+        }
+        .slick-next {
+          right: 35%;
+          background-size: 40%;
+          box-shadow: -4px 4px 4px rgb(0 0 0 / 5%);
+          background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/kraftshalaLiveSeries/right-arrow.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          @media screen and (min-width: 800px) {
+            right: 43%;
+          }
+        }
+      }
+      .slick-list {
+        overflow: hidden;
+        @media screen and (min-width: 800px) {
+          overflow: visible;
+        }
+        .slick-track {
+          display: flex;
+          .slick-slide {
+            background: #ffffff;
+            box-shadow: 4px 4px 25px rgb(0 0 0 / 15%);
+            border-radius: 10px;
+            padding: 15px 18px 0px 18px;
+            color: #243e60;
+            margin: 0 1rem;
+            height: auto;
+            .kflive-slick-card-heading {
+              font-size: 0.8em;
+              line-height: 20px;
+              text-align: left;
+              margin-bottom: 0.5rem;
+              @media screen and (min-width: 800px) {
+                font-size: 0.9em;
+              }
+            }
+            .kflive-slick-card-desc {
+              font-size: 0.8em;
+              line-height: 22px;
+              padding-bottom: 1rem;
+              text-align: justify;
+              @media screen and (min-width: 800px) {
+                font-size: 0.9em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.kan-khajura-article {
+  .img-div {
+    width: 38em;
+    margin: 2em auto;
+    max-width: 100%;
+    @media screen and (max-width: 800px) {
+      width: initial;
+    }
+  }
+}

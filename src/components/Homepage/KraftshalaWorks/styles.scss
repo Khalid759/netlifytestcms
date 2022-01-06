@@ -1,0 +1,268 @@
+.home-kraftshala-works {
+  padding: 4em 0;
+  color: #7e7e7e;
+  text-align: center;
+  font-weight: 400;
+
+  .kraftshala-works-head {
+    font-size: 1.6em;
+    line-height: 37px;
+    margin-bottom: 2em;
+    @media screen and (max-width: 800px) {
+      font-size: 1.2em;
+      line-height: 30px;
+      margin-bottom: 2.5em;
+    }
+
+    .bold-text {
+      font-weight: bold;
+    }
+  }
+
+  .kraftshala-works-cards {
+    color: #243e60;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
+    .kraftshala-works-card {
+      width: 28%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @media screen and (max-width: 800px) {
+        width: 90%;
+        margin-bottom: 1em;
+      }
+
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+
+      .kf-works-svg-div {
+        svg {
+          position: absolute;
+        }
+
+        .better1 {
+          top: 18%;
+          left: 10%;
+        }
+
+        .better2 {
+          top: 28%;
+          left: 23%;
+        }
+        .better3 {
+          top: 0;
+          right: 15%;
+        }
+
+        .better4 {
+          top: 10%;
+          right: 10%;
+        }
+
+        .line-icon {
+          svg {
+            top: -14%;
+            right: 17%;
+          }
+
+          line {
+            opacity: 0;
+          }
+        }
+      }
+
+      .better1 path,
+      .better2 path,
+      .better3 path,
+      .better4 path {
+        opacity: 0;
+      }
+
+      .placement_arrow1 {
+        left: 20%;
+        top: 25%;
+      }
+
+      .placement_arrow2 {
+        left: 20%;
+        top: -10%;
+      }
+
+      .placement_arrow3 {
+        top: 5%;
+        right: 23%;
+      }
+
+      .placement_arrow1 path,
+      .placement_arrow2 path,
+      .placement_arrow3 path {
+        opacity: 0;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+      }
+
+      &:hover {
+        .better1 path {
+          opacity: 1;
+          stroke-dasharray: 500;
+          stroke-dashoffset: 500;
+          animation: dash 0.5s forwards;
+        }
+        .better2 path {
+          opacity: 1;
+          stroke-dasharray: 500;
+          stroke-dashoffset: 500;
+          animation: dash 0.5s forwards;
+          animation-delay: 0.5s;
+        }
+        .better3 path {
+          opacity: 1;
+          stroke-dasharray: 500;
+          stroke-dashoffset: 500;
+          animation: dash 0.5s forwards;
+          animation-delay: 0.8s;
+        }
+
+        .better4 path {
+          opacity: 1;
+          stroke-dasharray: 500;
+          stroke-dashoffset: 500;
+          animation: dash 0.5s forwards;
+          animation-delay: 1s;
+        }
+
+        .line-icon {
+          .line1 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+          }
+          .line2 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+            animation-delay: 0.2s;
+          }
+          .line3 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+            animation-delay: 0.3s;
+          }
+          .line4 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+            animation-delay: 0.4s;
+          }
+          .line5 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+            animation-delay: 0.5s;
+          }
+          .line6 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+            animation-delay: 0.6s;
+          }
+          .line7 {
+            opacity: 1;
+            stroke-dasharray: 500;
+            stroke-dashoffset: 500;
+            animation: dash 0.5s forwards;
+            animation-delay: 0.7s;
+          }
+        }
+
+        .placement_arrow1 path {
+          opacity: 1;
+          animation: dash 0.5s forwards;
+          animation-delay: 0.3s;
+        }
+
+        .placement_arrow2 path {
+          opacity: 1;
+          animation: dash 0.5s forwards;
+          animation-delay: 0.5s;
+        }
+        .placement_arrow3 path {
+          opacity: 1;
+
+          animation: dash 0.5s forwards;
+          animation-delay: 0.8s;
+        }
+      }
+
+      .kf-works-card-img {
+        width: 8em;
+        @media screen and (max-width: 800px) {
+          width: 7em;
+        }
+
+        .desktop-img {
+          display: inline-block;
+          @media screen and (max-width: 800px) {
+            display: none;
+          }
+        }
+
+        .mobile-img {
+          display: none;
+          @media screen and (max-width: 800px) {
+            display: inline-block;
+          }
+        }
+      }
+
+      .kf-works-card-title {
+        font-weight: 600;
+        margin: 0.5em 0;
+        @media screen and (max-width: 800px) {
+          margin: 1em 0;
+        }
+
+        .title-line-break {
+          display: block;
+        }
+      }
+
+      .kf-works-card-description {
+        font-weight: 400;
+        font-size: 0.9em;
+        margin: 0.5em 0;
+        @media screen and (max-width: 800px) {
+          margin: 1em 0;
+        }
+      }
+
+      .kf-works-card-btn {
+        color: #ffb800;
+        font-size: 0.9em;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0.5em 0;
+      }
+    }
+  }
+}

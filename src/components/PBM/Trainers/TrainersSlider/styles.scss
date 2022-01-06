@@ -1,0 +1,168 @@
+.pbm-trainers_slider {
+  max-width: 794px;
+  margin: 0 auto;
+  width: 100%;
+  @media screen and (max-width: 900px) {
+    width: 95%;
+  }
+
+  .pbm-trainers_slider-head {
+    font-weight: bold;
+    margin-top: 57px;
+    font-size: 1.5em;
+    line-height: 37px;
+    text-align: center;
+    color: #ffb800;
+    margin-bottom: 60px;
+    display: block;
+  }
+  .pbm-slider-navTrainer {
+    margin-bottom: 0 !important;
+    img {
+      height: 123px;
+      width: 123px;
+      border-radius: 50%;
+      @media screen and (max-width: 900px) {
+        height: 90px;
+        width: 90px;
+      }
+    }
+    .slick-current img {
+      width: 145px;
+      height: 145px;
+      @media screen and (max-width: 900px) {
+        height: 110px;
+        width: 110px;
+      }
+    }
+    .pbm-trainer-navSlide {
+      display: flex !important;
+      justify-content: center;
+    }
+    .slick-slider {
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      display: flex;
+      .slick-prev {
+        width: 20px;
+        position: absolute;
+        z-index: 1;
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+      .slick-next {
+        width: 20px;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        img {
+          width: 100%;
+          height: 100%;
+          cursor: pointer;
+        }
+      }
+      .slick-list {
+        padding: 0px 50px;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        .slick-track {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .pbm-slider-forTrainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    .slick-slider {
+      .slick-list {
+        overflow: hidden;
+        .slick-track {
+          display: flex;
+          text-align: center;
+        }
+      }
+    }
+
+    .pbm-forTrainer-slide-head {
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 25px;
+      color: #404040;
+      @media screen and (max-width: 900px) {
+        font-size: 0.9em;
+      }
+    }
+    .pbm-forTrainer-slide-desc {
+      font-size: 0.8em;
+      line-height: 18px;
+      color: #404040;
+      @media screen and (max-width: 900px) {
+        font-size: 0.75em;
+      }
+    }
+  }
+}
+
+// @media (max-width: 460px) {
+//   .slider-navTrainer img {
+//     height: 55px;
+//     width: 55px;
+//   }
+//   .trainerArrowNext {
+//     top: 57% !important;
+//   }
+//   .trainerArrowPrev {
+//     top: 57% !important;
+//   }
+//   .slider-navTrainer .pbm-slick-current img {
+//     width: 70px;
+//     height: 70px;
+//   }
+// }
+// @media (max-width: 800px) {
+//   .storyArrowNext {
+//     top: 76%;
+//   }
+//   .storyArrowPrev {
+//     right: -5px;
+//     top: 76%;
+//   }
+//   .trainerArrowNext {
+//     top: 53%;
+//   }
+//   .trainerArrowPrev {
+//     top: 53%;
+//   }
+//   .forTrainer-slide-head {
+//     font-size: 14px;
+//     line-height: 21px;
+//   }
+//   .slider-navTrainer img {
+//     height: 80px;
+//     width: 80px;
+//   }
+//   .slider-navTrainer .pbm-slick-current img {
+//     width: 90px;
+//     height: 90px;
+//   }
+//   .pbm-trainers_slider-head {
+//     margin-top: 82px;
+//     font-size: 22px;
+//     line-height: 30px;
+//     margin-bottom: 35px;
+//   }
+// }
+// .slider-navStory {
+//   width: 90%;
+//   margin: 0 auto;
+// }

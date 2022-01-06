@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700&display=swap");
+.pbm_form-container {
+  font-family: "Montserrat";
+  margin-top: 1em;
+
+  .comp-app-btn {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 133.4%;
+    text-align: center;
+    border: 1px solid #f1ae13;
+    border-radius: 5px;
+    color: #f1ae13;
+    padding: 0.7rem 2rem;
+    width: 70%;
+    margin: 2em auto;
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  .pbm-divider {
+    border-bottom: 2px solid #94949440;
+    width: 90%;
+    max-width: 1400px;
+    margin: 2em auto;
+    @media screen and (min-width: 800px) {
+      margin: 3em auto;
+      display: none;
+    }
+  }
+
+  .hero-div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: initial;
+    @media screen and (min-width: 900px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .hero-sec-container {
+      color: #7e7e7e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+
+      @media screen and (min-width: 900px) {
+        width: 45%;
+        margin-top: 2rem;
+      }
+      .pbm-form-container {
+        width: 95%;
+        padding-top: 1.5rem;
+        @media screen and (min-width: 900px) {
+          width: 100%;
+          padding-top: 0rem;
+        }
+        .pbm-form-kf-image {
+          width: 80px;
+          margin: 0 auto;
+          @media screen and (min-width: 900px) {
+            width: 150px;
+          }
+        }
+      }
+
+      .pbm-form-hero-section {
+        padding: 1em 0;
+        padding-bottom: 0rem;
+        @media screen and (min-width: 900px) {
+          padding: 2em 0;
+        }
+        .pbm-form-program-name {
+          text-align: center;
+          font-size: 1.5em;
+          font-weight: 800;
+          color: #404040;
+          @media screen and (min-width: 900px) {
+            font-size: 2.8em;
+          }
+          span {
+            display: block;
+          }
+          .brand-management {
+            line-height: normal;
+            @media screen and (min-width: 900px) {
+              line-height: 50px;
+            }
+          }
+
+          .pbm-digital-txt {
+            font-size: 0.8em;
+            font-weight: 700;
+            margin-top: 1rem;
+            color: #ffb800;
+            @media screen and (min-width: 900px) {
+              font-size: 0.75em;
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .page-logo {
+        width: 13em;
+        @media screen and (min-width: 900px) {
+          width: 17em;
+        }
+      }
+
+      .trademark {
+        text-align: center;
+        font-size: 0.8em;
+        margin-bottom: 20px;
+        color: #243e60;
+        display: none;
+        @media screen and (min-width: 900px) {
+          display: block;
+        }
+      }
+
+      .pbm-form-hired-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+        @media screen and (min-width: 900px) {
+          margin-top: 0em;
+        }
+
+        .sec-title {
+          padding-top: 0.5em;
+          text-align: center;
+          font-size: 0.8em;
+          @media screen and (min-width: 900px) {
+            padding-top: 1em;
+            font-size: 0.9em;
+          }
+        }
+        .sec-subtitle {
+          font-size: 0.8em;
+          font-weight: 500;
+          line-height: 17px;
+          text-align: center;
+          color: #000000;
+          margin-top: 1em;
+          @media screen and (min-width: 900px) {
+            display: none;
+          }
+        }
+        .sec-description {
+          font-size: 0.75em;
+          font-weight: 500;
+          line-height: 17px;
+          text-align: center;
+          margin-top: 1em;
+        }
+        .sec-img {
+          @media screen and (min-width: 900px) {
+            width: 20em;
+            margin-top: 2em;
+          }
+        }
+
+        .sec-description {
+          @media screen and (min-width: 900px) {
+            text-align: center;
+            font-size: 1em;
+          }
+          span {
+            color: #404040;
+            font-weight: 700;
+          }
+          .desc-2,
+          .desc-1 {
+            font-family: "Abhaya Libre", serif;
+            font-size: 1.18em;
+            line-height: 112%;
+            span {
+              font-weight: 700;
+              font-family: "Abhaya Libre", serif;
+            }
+          }
+          .desc-2 {
+            position: relative;
+            span {
+              font-weight: 700;
+              color: #7e7e7e;
+              display: block;
+            }
+            .text-strokes {
+              width: 265px;
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          .highlight-grey {
+            background: lightgrey;
+            color: black;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+
+  .card-section-div {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    @media screen and (min-width: 900px) {
+      margin-top: 7em;
+    }
+    .card-head {
+      font-weight: bold;
+      font-size: 0.8em;
+      line-height: 133.4%;
+      text-align: center;
+      color: #404040;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 3em;
+      display: block;
+      @media screen and (min-width: 600px) {
+        font-size: 1.4em;
+        width: 70%;
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @media screen and (min-width: 600px) {
+      flex-direction: row;
+    }
+
+    .card-div {
+      display: flex;
+      width: 100%;
+      margin-bottom: 1em;
+      @media screen and (min-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 33%;
+      }
+
+      .card-title {
+        color: #f1ae13;
+        font-weight: bold;
+        margin: 0.5em 0;
+        font-size: 0.8em;
+        margin-right: 0.5em;
+        @media screen and (min-width: 600px) {
+          font-size: 1.3em;
+          margin-right: 0em;
+        }
+      }
+      .card-icon {
+        margin-right: 1em;
+        width: 15%;
+        @media screen and (min-width: 600px) {
+          margin-right: 0em;
+          width: 4.5em;
+        }
+      }
+
+      .card-info {
+        width: 70%;
+        div {
+          display: inline;
+          @media screen and (min-width: 600px) {
+            display: block;
+          }
+        }
+      }
+
+      .card-description {
+        font-size: 0.8em;
+        line-height: 150.4%;
+        color: #404040;
+
+        @media screen and (min-width: 800px) {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+
+  .pbmForm-admission {
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (min-width: 900px) {
+      width: 90%;
+    }
+
+    .section-head {
+      color: #f1ae13;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+
+    .section-info {
+      font-size: 0.8em;
+      line-height: 133.4%;
+      color: #404040;
+      margin: 0.5em auto;
+      width: 85%;
+      @media screen and (min-width: 900px) {
+        font-size: 1em;
+        width: 100%;
+        margin: 0.5em 0;
+      }
+    }
+
+    .admission-cards {
+      text-align: initial;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      @media screen and (min-width: 900px) {
+        flex-direction: row;
+      }
+
+      .admission-card {
+        margin: 1em 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @media screen and (min-width: 900px) {
+          flex-direction: row;
+          margin: 2em;
+        }
+
+        .round-title {
+          margin-left: 1em;
+          font-weight: bold;
+          color: #404040;
+          font-size: 0.8em;
+          text-align: center;
+          @media screen and (min-width: 900px) {
+            font-size: 1.1em;
+            text-align: left;
+          }
+          .new-line {
+            display: inline;
+            @media screen and (min-width: 900px) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+    .further-detail {
+      font-size: 0.8em;
+      width: 85%;
+      margin: 0.5em auto;
+      text-align: center;
+      @media screen and (min-width: 900px) {
+        display: none;
+      }
+    }
+  }
+
+  .pbm-student-slider {
+    width: 100%;
+    max-width: 1400px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    @media screen and (min-width: 900px) {
+      width: 85%;
+      margin-top: 2.5em auto;
+    }
+
+    .slider-section-head {
+      color: #f1ae13;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-align: center;
+
+      @media screen and (min-width: 800px) {
+        font-size: 1.3em;
+      }
+    }
+
+    .batch-info {
+      font-size: 0.8em;
+      line-height: 133.4%;
+      text-align: center;
+      color: #404040;
+      width: 85%;
+      margin: 0.5em auto;
+      @media screen and (min-width: 800px) {
+        font-size: 1em;
+        width: 40%;
+      }
+
+      a {
+        color: #1344f1;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+
+    .placement-comp-div {
+      .placement-desktop {
+        display: none;
+        @media screen and (min-width: 800px) {
+          display: block;
+        }
+      }
+
+      .placement-mob {
+        display: block;
+        @media screen and (min-width: 800px) {
+          display: none;
+        }
+      }
+    }
+
+    .slider-head {
+      text-align: center;
+      color: #404040;
+      font-weight: 700;
+      font-size: 1.1em;
+      margin-top: 2em;
+      margin-bottom: 0rem;
+      @media screen and (min-width: 800px) {
+        font-size: 2em;
+        margin-bottom: 1.5rem;
+        margin-top: 0em;
+      }
+    }
+
+    .slick-track {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-around;
+      text-align: initial;
+
+      .slick-slide > div {
+        height: 100%;
+      }
+    }
+
+    .slick-dots {
+      display: flex !important;
+      justify-content: space-between;
+      width: 7em;
+      margin: 0 auto;
+      @media screen and (min-width: 800px) {
+        margin-top: 2em;
+        width: 12em;
+      }
+
+      li::marker {
+        color: transparent;
+      }
+      button {
+        color: #7e7e7e;
+        background: #7e7e7e;
+        width: 2em;
+        height: 1em;
+        font-size: 0.4em;
+        display: inline-block;
+        border-radius: 11px;
+        border: none;
+        @media screen and (min-width: 800px) {
+          width: 2.3em;
+          font-size: 0.5em;
+        }
+      }
+
+      .slick-active button {
+        color: #f1ae13;
+        background: #f1ae13;
+        width: 5em;
+      }
+    }
+
+    .student-card {
+      background: #ffffff;
+      color: #747474;
+      box-shadow: 0px 0px 23px rgb(64 64 64 / 10%);
+      border-radius: 8px;
+      padding: 1em;
+      height: 100%;
+      // width: 40em;
+      margin: 0 1em;
+      font-size: 0.8em;
+      @media screen and (min-width: 900px) {
+        padding: 1em 2em;
+        font-size: 0.9em;
+      }
+
+      .student-info-section {
+        display: flex;
+        align-items: center;
+
+        .student-name {
+          color: #f1ae13;
+          font-weight: bold;
+          font-size: 0.9em;
+          @media screen and (min-width: 900px) {
+            font-size: 1em;
+          }
+        }
+
+        .student-desgination {
+          font-size: 0.85em;
+          padding-top: 0.1rem;
+        }
+
+        .placedAt {
+          font-weight: bold;
+          color: #f1ae13;
+          font-size: 0.85em;
+          font-style: italic;
+        }
+
+        .student-info-img {
+          width: 5em;
+          margin-right: 0.5em;
+          @media screen and (min-width: 900px) {
+            margin-right: 1em;
+          }
+          img {
+            min-width: 60px;
+            @media screen and (min-width: 900px) {
+              width: 100%;
+            }
+          }
+        }
+
+        .student-info-div {
+          border-bottom: 0.25px solid #f1ae136b;
+          padding-bottom: 0.5em;
+        }
+      }
+
+      .student-info-desc-div {
+        margin-top: 1em;
+        font-style: italic;
+        font-size: 1em;
+        text-align: justify;
+        @media screen and (min-width: 900px) {
+          font-size: 0.9em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

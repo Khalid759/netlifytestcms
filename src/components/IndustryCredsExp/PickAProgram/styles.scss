@@ -1,0 +1,74 @@
+.ice-pick-program {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em 0;
+
+  .for-seo {
+    display: none;
+  }
+
+  .ice-pick-pro-title {
+    text-align: center;
+    color: #404040;
+    font-weight: 800;
+    font-size: 1.375em;
+    line-height: 153.4%;
+    @media screen and (min-width: 800px) {
+      font-size: 2em;
+    }
+  }
+
+  .ice-program-tab {
+    margin-top: 2em;
+    text-align: initial;
+
+    .program-tabs-container {
+      .program-tab-head {
+        @media screen and (min-width: 800px) {
+          padding: 0.5em;
+        }
+      }
+      .program-tab-content {
+        .program-tab-card {
+          @media screen and (min-width: 800px) {
+            width: 25em;
+          }
+        }
+      }
+    }
+
+    .program-tabs-container .program-tab-head .program-tab-head-name {
+      text-align: center;
+      font-weight: 500;
+      @media screen and (min-width: 800px) {
+        font-size: 1em;
+      }
+    }
+    .program-tabs-container
+      .program-tab-content
+      .program-tab-card
+      .program-card-img {
+      height: 11em !important;
+    }
+
+    img {
+      height: 11em !important;
+    }
+
+    .program-card-trademark {
+      display: none !important;
+    }
+
+    .program-card-about {
+      color: #040404 !important;
+      b {
+        font-weight: initial !important;
+      }
+    }
+
+    .program-note {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.hiring-solution-container {
+  padding-top: 4em;
+  h2 {
+    color: #7e7e7e;
+    font-weight: initial;
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 800px) {
+      font-size: 1.2em;
+      width: 90%;
+      margin: 2em auto;
+      text-transform: initial;
+      text-align: center;
+    }
+  }
+
+  .hiring-card-div {
+    margin: 4em auto;
+    // width: 60%;
+    .fees-div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2em;
+      align-items: center;
+      width: 50%;
+      margin: 2em auto;
+
+      @media screen and (max-width: 800px) {
+        width: 90%;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .fee-content {
+        color: #243e60;
+
+        @media screen and (max-width: 800px) {
+          margin: 1em 0;
+        }
+
+        .fee-title {
+          font-weight: 600;
+          font-size: 1.2em;
+          position: relative;
+
+          @media screen and (max-width: 800px) {
+            font-size: 1em;
+          }
+
+          &::before {
+            content: " ";
+            position: absolute;
+            background: #ffb800;
+            z-index: -1;
+            width: 12em;
+            height: 0.6em;
+            top: 0.6em;
+            left: -0.5em;
+          }
+        }
+
+        .fee-sub {
+          margin-top: 1em;
+          font-size: 0.9em;
+          line-height: 150%;
+          @media screen and (max-width: 800px) {
+            font-size: 0.8em;
+          }
+        }
+      }
+
+      .fee-img {
+        text-align: end;
+        img {
+          width: 12em;
+
+          @media screen and (max-width: 800px) {
+            width: 7em;
+          }
+        }
+      }
+    }
+
+    .fee-bg {
+      background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/common/Vector-22.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 30em;
+      min-height: 30em;
+
+      display: flex;
+      align-items: center;
+      .fee-img {
+        text-align: initial;
+      }
+
+      .fee-content {
+        text-align: end;
+
+        .fee-title {
+          &::before {
+            content: " ";
+            position: absolute;
+            background: #ffb800;
+            z-index: -1;
+            width: 10em;
+            height: 0.6em;
+            top: 0.6em;
+            left: initial;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}

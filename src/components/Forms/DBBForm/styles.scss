@@ -1,0 +1,435 @@
+.dbb-formWrap {
+  box-shadow: 15px 15px 100px rgb(0 0 0 / 7%);
+  border-radius: 10px;
+  max-width: 967px;
+  width: 90%;
+  margin: 0 auto 100px auto;
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    margin-top: 4rem;
+  }
+  .dbb-apply-heading {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin: 0 0 2rem 0;
+    background: #ffb800;
+    @media screen and (max-width: 800px) {
+      font-size: 1em;
+    }
+  }
+  .dbb-form-head {
+    max-width: 567px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 46px;
+    .dbb-form-head-heading {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 13px;
+      color: #000000;
+      font-size: 16px;
+      line-height: 25px;
+      color: #000000;
+    }
+    .dbb-form-head-desc {
+      color: #000;
+    }
+  }
+  .dbb-contact-form {
+    width: 90%;
+    margin: 0 auto;
+    .dbb-training-form {
+      padding-bottom: 2rem;
+      .dbb-desk-border {
+        @media (min-width: 800px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 2rem;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        margin-top: 2rem;
+      }
+      .dbb-checkbox {
+        margin-top: 0.2rem;
+        .dbb-checkbox-container {
+          color: #7e7e7e;
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          font-size: 12px;
+          text-align: initial;
+        }
+
+        .dbb-checkbox-container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+
+        .dbb-checkbox-checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          border: 1px solid #c4c4c42e;
+          background-color: #eee;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .dbb-checkbox-container input:checked ~ .dbb-checkbox-checkmark {
+          background-color: white;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .dbb-checkbox-checkmark:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .dbb-checkbox-container input:checked ~ .dbb-checkbox-checkmark:after {
+          display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .dbb-checkbox-container .dbb-checkbox-checkmark:after {
+          left: 5px;
+          top: 1px;
+          width: 3px;
+          height: 10px;
+          border: solid #f1ae13;
+          border-width: 0 3px 3px 0;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+      }
+      .dbb-training-form-field-check {
+        @media screen and (max-width: 800px) {
+          margin-top: 2rem;
+        }
+      }
+
+      .dbb-training-form-field {
+        margin-top: 15px;
+        margin-bottom: 1.5rem;
+        position: relative;
+        @media screen and (max-width: 1150px) {
+          margin-top: 10px;
+          margin-bottom: 1.3rem;
+        }
+        .dbb-training-form-list {
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          .dbb-training-form-list-content {
+            background-color: white;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            border-color: #ffffff;
+            z-index: 1051;
+            .dbb-training-form-list-search {
+              padding: 0 0.5rem;
+            }
+            .dbb-training-form-list-wrap {
+              margin-top: 10px;
+              max-height: 200px;
+              overflow-y: auto;
+
+              .dbb-training-form-list-item {
+                font-size: 13px;
+                color: #3c0096;
+                padding: 6px;
+                cursor: pointer;
+              }
+              .disabled {
+                color: #999;
+                padding: 6px;
+              }
+
+              .dbb-training-form-list-item:hover {
+                background-color: #5897fb;
+                color: white;
+              }
+              .disabled:hover {
+                color: #999;
+                background-color: white;
+                cursor: context-menu;
+              }
+              .active {
+                background-color: #5897fb;
+                color: white;
+              }
+            }
+          }
+        }
+        .dbb-training-form-label {
+          font-size: 14px;
+          line-height: 17px;
+          padding-left: 1rem;
+          color: #7e7e7e;
+          display: inline-block;
+          @media screen and (max-width: 1150px) {
+            font-size: 12px;
+          }
+          .dbb-training-form-sub-label {
+            font-size: 10px;
+          }
+        }
+        .dbb-training-form-input {
+          width: 100%;
+          height: 30px;
+          background: #ffffff;
+          box-shadow: inset -4px -4px 15px rgba(0, 0, 0, 0.06);
+          border-radius: 100px;
+          text-indent: 1rem;
+          margin-top: 0.5rem;
+          border: none;
+          outline: none;
+        }
+        .dbb-training-form-select-institute {
+          cursor: pointer;
+        }
+        .dbb-training-form-inputCV {
+          height: 30px;
+          padding: 4px;
+          margin-top: 0.5rem;
+          background: #ffffff;
+          box-shadow: inset -4px -4px 15px rgba(0, 0, 0, 0.06);
+          border-radius: 100px;
+          box-sizing: border-box;
+          height: 30px;
+          outline: none;
+          border: none;
+          font-size: 14px;
+          color: #7e7e7e;
+          padding-left: 20px;
+          width: 100%;
+        }
+        .dbb-error-msg {
+          color: #ff0000;
+          font-size: 10px;
+          position: absolute;
+          margin: 5px 0 0 1rem;
+          @media screen and (max-width: 1100px) {
+            color: #ff0000;
+            font-size: 10px;
+            position: absolute;
+            margin: 5px 0 0 1rem !important;
+          }
+          @media screen and (max-width: 800px) {
+            font-size: 9px;
+          }
+        }
+      }
+      .dbb-training-form-field-textarea {
+        @media (max-width: 800px) {
+          margin-top: 2rem;
+        }
+        .dbb-training-form-textarea {
+          background: #ffffff;
+          box-shadow: inset -4px -4px 15px rgba(0, 0, 0, 0.06);
+          border-radius: 100px;
+          text-indent: 1rem;
+          margin-top: 0.5rem;
+          border: none;
+          outline: none;
+          padding: 1rem 3rem;
+          max-width: 100%;
+          max-height: 155px;
+          min-height: 108px;
+          min-width: 100%;
+          margin: 8px 0px 0px;
+          width: 705px;
+          height: 108px;
+          .dbb-training-form-textarea::-webkit-scrollbar-track,
+          .modalCstm2::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #f5f5f5;
+            border-radius: 10px;
+          }
+          .dbb-training-form-textarea::-webkit-scrollbar,
+          .modalCstm2::-webkit-scrollbar {
+            width: 10px;
+            background-color: #f5f5f5;
+          }
+          .dbb-training-form-textarea::-webkit-scrollbar-thumb,
+          .modalCstm2::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: #243e60;
+          }
+          @media screen and (max-width: 800px) {
+            height: 155px;
+            border-radius: 20px;
+            padding: 1rem;
+          }
+        }
+      }
+      .dbb-training-form-field-btn {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .dbb-error-msgForm {
+          position: absolute;
+          top: -27px;
+          font-size: 14px;
+          color: #ff0000;
+          text-align: center;
+        }
+        .dbb-training-btn-med {
+          width: 176px;
+          height: 30px;
+          @media screen and (max-width: 800px) {
+            width: 115px;
+            height: 28px;
+          }
+        }
+        .dbb-training-form-btn {
+          align-items: center;
+          background: #ffb800;
+          border-radius: 100px;
+          box-shadow: 2px 2px 7px rgb(0 0 0 / 11%);
+          color: #fff;
+          cursor: pointer;
+          font-size: 0.9em;
+          justify-content: center;
+          line-height: 2;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+      .dbb-confidential-desc {
+        font-size: 0.9em;
+        line-height: 21px;
+        text-align: center;
+        color: #7e7e7e;
+        margin-top: 2rem;
+        @media screen and (max-width: 800px) {
+          line-height: 23px;
+        }
+      }
+    }
+    .dbb-success-group {
+      text-align: center;
+      padding-bottom: 2rem;
+      .dbb-success-ty-text1 {
+        text-align: center;
+        color: #1344f1;
+        padding: 18px 34px 0px 34px;
+        font-size: 1.1em;
+        line-height: 26px;
+        margin-bottom: 9px;
+        @media screen and (max-width: 800px) {
+          font-size: 0.9em;
+          line-height: 21px;
+        }
+        .dbb-success-ty-textFillMidPage {
+          font-weight: 600;
+        }
+      }
+      .dbb-success-ty-text2 {
+        font-size: 0.8em;
+        line-height: 17px;
+        padding: 0 34px 0px 34px;
+        text-align: center;
+        color: #7e7e7e;
+        margin-bottom: 27px;
+        @media screen and (max-width: 800px) {
+          line-height: 16px;
+          margin-bottom: 30px;
+        }
+      }
+      .dbb-success-ty-youtube {
+        padding: 0px 15px 27px 15px;
+        a {
+          display: inline-block;
+        }
+        img {
+          max-height: 369px;
+          width: auto;
+          @media screen and (max-width: 800px) {
+            width: 100%;
+          }
+        }
+      }
+      .dbb-success-step3-footer {
+        padding: 0px 34px 0px 34px;
+        @media screen and (max-width: 800px) {
+          padding: 0px;
+        }
+        .dbb-success-step3-footer-head {
+          position: relative;
+          max-width: 333px;
+          margin: 0 auto;
+          @media screen and (max-width: 800px) {
+            max-width: 100%;
+          }
+          .dbb-success-step3-footer-head-border {
+            width: 100%;
+            height: 0.5px;
+            background: #c4c4c4;
+          }
+          .dbb-success-step3-footer-heading {
+            font-weight: 600;
+            font-size: 0.8em;
+            line-height: 17px;
+            color: #7e7e7e;
+            position: absolute;
+            padding: 0 0.5rem;
+            padding: 0 0.5rem;
+            left: 75px;
+            top: -9px;
+            background: #fff;
+          }
+        }
+        .dbb-success-step3-footer-info {
+          text-align: left;
+          max-width: 333px;
+          margin: 0 auto;
+          margin-top: 1rem;
+          @media screen and (max-width: 800px) {
+            max-width: 100%;
+            padding-bottom: 34px;
+          }
+          .dbb-success-step3-footer-hi {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            margin-left: 75px;
+            font-size: 0.75em;
+            @media screen and (max-width: 800px) {
+              font-size: 0.8em;
+            }
+            img {
+              max-width: 14px;
+              margin-right: 5px;
+              max-height: 369px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

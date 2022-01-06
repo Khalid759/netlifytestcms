@@ -1,0 +1,113 @@
+.ice-overview-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ice-overview {
+  padding: 2em 0;
+
+  .ice-overview-title {
+    text-align: center;
+    color: #404040;
+    font-weight: 800;
+    font-size: 1.375em;
+    line-height: 153.4%;
+    @media screen and (min-width: 800px) {
+      font-size: 2em;
+    }
+
+    .yellow-txt {
+      color: #ffb800;
+    }
+
+    .desk-newline {
+      @media screen and (min-width: 800px) {
+        display: block;
+      }
+    }
+  }
+
+  .ice-overview-points-mob {
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+    .point-head {
+      display: flex;
+      align-items: center;
+      .point-name {
+        margin-left: 1em;
+        color: #ffb800;
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
+
+    .point-description {
+      margin-top: 1em;
+      font-size: 0.75em;
+      line-height: 153.4%;
+    }
+  }
+
+  .ice-overview-points-desk {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+    .reverse-flex {
+      flex-direction: row-reverse;
+    }
+
+    .curve-bg {
+      // background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/IndustryCredsExperience/curve.svg);
+      // background-repeat: no-repeat;
+      // background-position: 50%;
+      // background-size: cover;
+      padding: 2em 0;
+
+      background-image: url(https://kfwebassets.s3.ap-south-1.amazonaws.com/kraftshalaLiveSeries/live-bg-desk.png);
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: 100% 30em;
+      height: 30em;
+      display: flex;
+      align-items: center;
+      // border: 2px solid black;
+      .overview-point-div {
+        margin-bottom: initial;
+      }
+    }
+    .overview-point-div {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-bottom: 4em;
+
+      .overview-point-img {
+        width: 50%;
+        text-align: center;
+
+        img {
+          width: 10em;
+        }
+      }
+
+      .overview-point-content {
+        width: 50%;
+
+        .overview-point-name {
+          font-size: 1.5em;
+          color: #ffb800;
+          font-weight: bold;
+        }
+
+        .overview-point-description {
+          margin-top: 1em;
+          div {
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
