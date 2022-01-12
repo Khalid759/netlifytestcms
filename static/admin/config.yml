@@ -2,7 +2,7 @@ backend:
   name: github
   repo: Khalid759/netlifytestcms
   branch: main
-  base_url: https://d2u3jeykin30mo.cloudfront.net
+  base_url: http://netlifytestcms.s3-website.ap-south-1.amazonaws.com/
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:
