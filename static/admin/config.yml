@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: Khalid759/netlifytestcms
   branch: main
   base_url: https://d2u3jeykin30mo.cloudfront.net
