@@ -1,6 +1,8 @@
 backend:
   name: git-gateway
+  repo: Khalid759/netlifytestcms
   branch: main
+  base_url: https://d2u3jeykin30mo.cloudfront.net
 media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 collections:

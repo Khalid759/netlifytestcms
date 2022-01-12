@@ -30,12 +30,12 @@ jobs:
       - name: Deploy
         uses: jonelantha/gatsby-s3-action@v1
         with:
-          dest-s3-bucket: program.kraftshala.com
+          dest-s3-bucket: netlifytestcms
       # Invalidate Cloudfront (this action) choose DISTRIBUTION for test as E17PCBXBIQXVLG and for main as E25TSEB7JC0N62
       - name: invalidate
         uses: chetan/invalidate-cloudfront-action@master
         env:
-          DISTRIBUTION: E25TSEB7JC0N62
+          DISTRIBUTION: E3HP7N7CIM6MFV
           PATHS: "/*"
           AWS_REGION: "ap-south-1"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
