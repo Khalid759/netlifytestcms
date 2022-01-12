@@ -1,0 +1,42 @@
+name: Deploy kraft
+# use 'test' branch for testpragram.kraftshala.com and 'main' branch for pragram.kraftshala.com
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Build
+        run: |
+          npm ci
+          CI=false REACT_APP_ENV=prod npm run build
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-south-1
+
+      # use bucket name (dest-s3-bucket) as testpragram.kraftshala.com (if branch is 'test') or pragram.kraftshala.com (if branch is 'main')
+      - name: Deploy
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: program.kraftshala.com
+      # Invalidate Cloudfront (this action) choose DISTRIBUTION for test as E17PCBXBIQXVLG and for main as E25TSEB7JC0N62
+      - name: invalidate
+        uses: chetan/invalidate-cloudfront-action@master
+        env:
+          DISTRIBUTION: E25TSEB7JC0N62
+          PATHS: "/*"
+          AWS_REGION: "ap-south-1"
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
