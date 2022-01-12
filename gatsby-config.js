@@ -106,6 +106,5 @@ module.exports = {
         extensions: ["css", "html", "js", "svg"],
       },
     },
-    `gatsby-plugin-netlify-cms`
   ],
 };
